@@ -84,7 +84,7 @@ remotes::install_github("cadam00/prior3D")
 
 Let us consider the following dataset as an illustrative example. It
 represents a subset of the species analyzed in Doxa et al.
-([2022](#ref-doxa20224d)). For simplicity reasons, we have included only
+([2022a](#ref-doxa20224d)). For simplicity reasons, we have included only
 20 species for demonstration purposes.
 
 **Biodiversity features**

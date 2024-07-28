@@ -18,7 +18,9 @@ upon the **prioritizr** package ([Hanson et al. 2024](#ref-prioritizr)), using
 commercial and open-source exact algorithm solvers that ensure optimal solutions
 to prioritization problems.
 
-<img src="fig1.jpg" alt="Flow chart of the 3D prioritization analysis for the four depth zones considered in the @doxa20224d analysis" width="100%" />
+<p align="center">
+  <img src="fig1.jpg" alt="Flow chart of the 3D prioritization analysis for the four depth zones considered in the @doxa20224d analysis" width="100%" />
+</p>
 <p class="caption">
 <span id="fig-Figure1"></span>Figure 1: Flow chart of the 3D
 prioritization analysis for the four depth zones considered in the Doxa
@@ -155,7 +157,9 @@ m (circalittoral zone, continental shelf, animal-dominated), (iii) 200
 to 2000 m (~continental slope), and (iv) exceeding 2000 m in depth
 (lower bathyal plains and abyssal zone) (Figure [2](#ref-Figure2)).
 
-<img src="fig2.jpg" alt="The study area and the considered depth zones" width="50%" />
+<p align="center">
+  <img src="fig2.jpg" alt="The study area and the considered depth zones" width="50%" />
+</p>
 <p class="caption">
 <span id="fig-Figure2"></span>Figure 2: The study area and the
 considered depth zones
@@ -273,7 +277,9 @@ areas selected by various budget levels. Although this output follows a
 different approach, it resembles to typical Zonation output maps.
 
 
-<img src="fig3.jpg" width="100%" style="display: block; margin: auto;" />
+<p align="center">
+  <img src="fig3.jpg" width="100%" style="display: block; margin: auto;" />
+</p>
 <p class="caption">
 <span id="fig-Figure3"></span>Figure 3: Output for 30% budget percentage
 </p>
@@ -283,7 +289,9 @@ different approach, it resembles to typical Zonation output maps.
 plot_3D(single_3D, to_plot="all", add_lines=FALSE)
 ```
 
-<img src="fig4.jpg" alt="Output for 30% budget percentage" width="60%" />
+<p align="center">
+  <img src="fig4.jpg" alt="Output for 30% budget percentage" width="60%" />
+</p>
 <p class="caption">
 <span id="fig-Figure4"></span>Figure 4: Output for 30% budget percentage
 </p>
@@ -333,7 +341,9 @@ multuple_3D <- prioritize_3D(split_features = split_features,
 plot_3D(multuple_3D)
 ```
 
-<img src="fig5.jpg" alt="Output for multiple budget percentages" width="75%" />
+<p align="center">
+  <img src="fig5.jpg" alt="Output for multiple budget percentages" width="75%" />
+</p>
 <p class="caption">
 <span id="fig-Figure5"></span>Figure 5: Output for multiple budget
 percentages
@@ -363,7 +373,9 @@ out_2D_3D <- Compare_2D_3D(biodiv_raster = biodiv_raster,
 plot_Compare_2D_3D(out_2D_3D, to_plot="all", add_lines=FALSE)
 ```
 
-<img src="fig6.jpg" alt="Comparison of 2D vs 3D approach for multiple budget percentages" width="75%" />
+<p align="center">
+  <img src="fig6.jpg" alt="Comparison of 2D vs 3D approach for multiple budget percentages" width="75%" />
+</p>
 <p class="caption">
 <span id="fig-Figure6"></span>Figure 6: Comparison of 2D vs 3D approach
 for multiple budget percentages
@@ -402,7 +414,9 @@ coherence(out_2D_3D, w=3)
 ## 3.806 3.503 2.413 2.118 
 ```
 
-<img src="sa.jpg" alt="SA" width="75%" />
+<p align="center">
+  <img src="sa.jpg" alt="SA" width="75%" />
+</p>
 <p class="caption">
 <span id="fig-Figure7"></span>Figure 7: SA
 </p>
@@ -418,7 +432,9 @@ coherence(out_2D_3D, w=3, metric="sku")
 ## 0.347  1.138 -0.536 -0.374 
 ```
 
-<img src="sku.jpg" alt="SKU" width="75%" />
+<p align="center">
+  <img src="sku.jpg" alt="SKU" width="75%" />
+</p>
 <p class="caption">
 <span id="fig-Figure8"></span>Figure 8: SKU
 </p>
@@ -521,8 +537,9 @@ coherence(out_2D_3D, w=3, metric="rao")
 ## 4: In rasterdiv::paRao(x = raster_data_3D, window = w, na.tolerance = 1,  :
 ##   Input data are float numbers. Converting data to integer matrices.
 ```
-
-<img src="rao.jpg" alt="RAO" width="75%" />
+<p align="center">
+  <img src="rao.jpg" alt="RAO" width="75%" />
+</p>
 <p class="caption">
 <span id="fig-Figure9"></span>Figure 9: RAO
 </p>

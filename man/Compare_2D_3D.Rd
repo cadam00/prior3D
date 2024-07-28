@@ -142,7 +142,7 @@ If \code{val_depth_range = TRUE} (default), then no correction is done and the d
 of the biodiversity features is derived from the corresponding feature distribution
 raster and so \code{"min_z"} and \code{"max_z"} are ignored.
 If \code{val_depth_range = FALSE}, then the function uses the minimum and maximum depth
-information provided in the biodiv_df, so as to remove feature occurances outside their
+information provided in the biodiv_df, so as to remove feature occurrences outside their
 expected range.
 
 \code{budget_percents}: Budget reflects the desired level of protection to be modeled.

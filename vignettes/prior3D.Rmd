@@ -3,16 +3,16 @@ title: "Introduction to prior3D"
 author: "Christos Adam, Nikolaos Nagkoulis, Aggeliki Doxa"
 output:
   
-  bookdown::markdown_document2:
-   base_format: rmarkdown::md_document
-   variant: markdown_github
+  bookdown::html_document2:
+    base_format: rmarkdown::html_vignette
+  #  base_format: rmarkdown::md_document
+  #  variant: markdown_github
   #   fig_width: 7
   #   fig_height: 6
   #   fig_caption: true
   bookdown::pdf_document2: default
   bookdown::word_document2: default
-  bookdown::html_document2:
-    base_format: rmarkdown::html_vignette
+  # bookdown::markdown_document2:
   # html_fragment:
   # pdf_document: default
   # html_document: default

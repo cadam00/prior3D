@@ -21,7 +21,7 @@ to prioritization problems.
 <p align="center">
   <img src="fig1.jpg" alt="Flow chart of the 3D prioritization analysis for the four depth zones considered in the @doxa20224d analysis" width="100%" />
 </p>
-<p class="caption">
+<p class="caption" align="center">
 <span id="fig-Figure1"></span>Figure 1: Flow chart of the 3D
 prioritization analysis for the four depth zones considered in the Doxa
 et al. ([2022](#ref-doxa20224d)) analysis
@@ -160,7 +160,7 @@ to 2000 m (~continental slope), and (iv) exceeding 2000 m in depth
 <p align="center">
   <img src="fig2.jpg" alt="The study area and the considered depth zones" width="50%" />
 </p>
-<p class="caption">
+<p class="caption" align="center">
 <span id="fig-Figure2"></span>Figure 2: The study area and the
 considered depth zones
 </p>
@@ -280,7 +280,7 @@ different approach, it resembles to typical Zonation output maps.
 <p align="center">
   <img src="fig3.jpg" width="100%" style="display: block; margin: auto;" />
 </p>
-<p class="caption">
+<p class="caption" align="center">
 <span id="fig-Figure3"></span>Figure 3: Output for 30% budget percentage
 </p>
 
@@ -292,7 +292,7 @@ plot_3D(single_3D, to_plot="all", add_lines=FALSE)
 <p align="center">
   <img src="fig4.jpg" alt="Output for 30% budget percentage" width="60%" />
 </p>
-<p class="caption">
+<p class="caption" align="center">
 <span id="fig-Figure4"></span>Figure 4: Output for 30% budget percentage
 </p>
 
@@ -344,7 +344,7 @@ plot_3D(multuple_3D)
 <p align="center">
   <img src="fig5.jpg" alt="Output for multiple budget percentages" width="75%" />
 </p>
-<p class="caption">
+<p class="caption" align="center">
 <span id="fig-Figure5"></span>Figure 5: Output for multiple budget
 percentages
 </p>
@@ -376,7 +376,7 @@ plot_Compare_2D_3D(out_2D_3D, to_plot="all", add_lines=FALSE)
 <p align="center">
   <img src="fig6.jpg" alt="Comparison of 2D vs 3D approach for multiple budget percentages" width="75%" />
 </p>
-<p class="caption">
+<p class="caption" align="center">
 <span id="fig-Figure6"></span>Figure 6: Comparison of 2D vs 3D approach
 for multiple budget percentages
 </p>
@@ -417,7 +417,7 @@ coherence(out_2D_3D, w=3)
 <p align="center">
   <img src="sa.jpg" alt="SA" width="75%" />
 </p>
-<p class="caption">
+<p class="caption" align="center">
 <span id="fig-Figure7"></span>Figure 7: SA
 </p>
 
@@ -435,7 +435,7 @@ coherence(out_2D_3D, w=3, metric="sku")
 <p align="center">
   <img src="sku.jpg" alt="SKU" width="75%" />
 </p>
-<p class="caption">
+<p class="caption" align="center">
 <span id="fig-Figure8"></span>Figure 8: SKU
 </p>
 
@@ -540,7 +540,7 @@ coherence(out_2D_3D, w=3, metric="rao")
 <p align="center">
   <img src="rao.jpg" alt="RAO" width="75%" />
 </p>
-<p class="caption">
+<p class="caption" align="center">
 <span id="fig-Figure9"></span>Figure 9: RAO
 </p>
 

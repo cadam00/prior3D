@@ -21,7 +21,7 @@ to prioritization problems.
 <p align="center">
   <img src="fig1.jpg" alt="Flow chart of the 3D prioritization analysis for the four depth zones considered in the @doxa20224d analysis" width="100%" />
 </p>
-<p class="caption">
+<p class="caption" align="center">
 <span id="fig-Figure1"></span>Figure 1: Flow chart of the 3D
 prioritization analysis for the four depth zones considered in the Doxa
 et al. ([2022](#ref-doxa20224d)) analysis

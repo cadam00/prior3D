@@ -132,7 +132,7 @@ object must have two columns:
 In case that no feature weights are desired, then \code{priority_weights} can be kept
 to \code{NULL}.
 
-\code{breaks} must be in correspondance to depth_raster file.
+\code{breaks} must be in correspondence to depth_raster file.
 For example, if depth_raster has range \eqn{[10, -3000]}, then a breaks vector of
 \code{c(0,-40,-200,-2000,-Inf)} will create depth levels
 \eqn{[0,-40],\\(-40,-200], (-200, -2000], (-2000, -\infty)}

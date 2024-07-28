@@ -14,10 +14,10 @@ terra_jaccard(x, y)
 
 \arguments{
 \item{x}{
-SpatRast object with binary values.
+SpatRaster object with binary values.
 }
 \item{y}{
-SpatRast object with binary values.
+SpatRaster object with binary values.
 }
 }
 

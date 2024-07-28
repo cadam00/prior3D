@@ -222,14 +222,15 @@ package. This function uses the list generated from the `split_rast()`
 function and other necessary inputs.
 
 ``` r
-single_3D <- prioritize_3D(split_features = split_features,
-                           depth_raster = depth_raster,
-                           breaks = c(0, -40, -200, -2000, -Inf),
+single_3D <- prioritize_3D(split_features  = split_features,
+                           depth_raster    = depth_raster,
+                           breaks          = c(0, -40, -200, -2000, -Inf),
+                           biodiv_df       = biodiv_df,
                            budget_percents = 0.3,
-                           budget_weights = "richness",
-                           threads = parallel::detectCores(),
-                           portfolio = "gap", #"shuffle"
-                           portfolio_opts = list(number_solutions = 10))
+                           budget_weights  = "richness",
+                           threads         = parallel::detectCores(),
+                           portfolio       = "gap", #"shuffle"
+                           portfolio_opts  = list(number_solutions = 10))
 ```
 
 ``` r
@@ -301,14 +302,15 @@ And for multiple budgets
 
 ``` r
 # Create plot of outputs for multiple budget percentages
-multuple_3D <- prioritize_3D(split_features = split_features,
-                             depth_raster = depth_raster,
-                             breaks = c(0, -40, -200, -2000, -Inf),
+multuple_3D <- prioritize_3D(split_features  = split_features,
+                             depth_raster    = depth_raster,
+                             breaks          = c(0, -40, -200, -2000, -Inf),
+                             biodiv_df       = biodiv_df,
                              budget_percents = seq(0,1,0.1),
-                             budget_weights = "richness",
-                             threads = parallel::detectCores(),
-                             portfolio = "gap",
-                             portfolio_opts = list(number_solutions = 10))
+                             budget_weights  = "richness",
+                             threads         = parallel::detectCores(),
+                             portfolio       = "gap",
+                             portfolio_opts  = list(number_solutions = 10))
 ```
 
 ``` r

@@ -281,7 +281,8 @@ different approach, it resembles to typical Zonation output maps.
   <img src="fig3.jpg" width="100%" style="display: block; margin: auto;" />
 </p>
 <p class="caption" align="center">
-<span id="fig-Figure3"></span>Figure 3: Output for 30% budget percentage
+<span id="fig-Figure3"></span>Figure 3: Prioritization maps for single and
+multiple budget percentages
 </p>
 
 ``` r

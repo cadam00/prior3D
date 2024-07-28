@@ -39,7 +39,7 @@ knitr::opts_chunk$set(echo = TRUE, eval=FALSE)
 
 ## **Introduction to the prior3D Package (tutorial)**
 
-The **prior3D** package offers a comprehensive toolset for 3D systematic conservation planning, conducting nested prioritization analyses across multiple depth levels and ensuring efficient resource allocation throughout the water column [@doxa20224d]. It provides a structured workflow designed to address biodiversity conservation and management challenges in the 3 dimensions, such as the incorporation of multiple costs at different depth levels, while facilitating users’ choices and parameterization. The process initiates from the deepest level and progressively moves toward the surface, by conducting a step-by-step prioritization analysis at each depth Fig. \@ref(fig:Figure1). The optimization result at each depth level is considered as a cost layer for the layer above. This approach gives priority to areas chosen in deeper waters when selecting areas at the subsequent upper level, thus creating a cascading prioritization structure. The **prior3D** package is built upon the **prioritizr** package [@prioritizr], using commercial and open-source exact algorithm solvers that ensure optimal solutions to prioritization problems.
+The **prior3D** package offers a comprehensive toolset for 3D systematic conservation planning, conducting nested prioritization analyses across multiple depth levels and ensuring efficient resource allocation throughout the water column [@doxa20224d]. It provides a structured workflow designed to address biodiversity conservation and management challenges in the 3 dimensions, such as the incorporation of multiple costs at different depth levels, while facilitating users’ choices and parameterization. The process initiates from the deepest level and progressively moves toward the surface, by conducting a step-by-step prioritization analysis at each depth Figure \@ref(fig:Figure1). The optimization result at each depth level is considered as a cost layer for the layer above. This approach gives priority to areas chosen in deeper waters when selecting areas at the subsequent upper level, thus creating a cascading prioritization structure. The **prior3D** package is built upon the **prioritizr** package [@prioritizr], using commercial and open-source exact algorithm solvers that ensure optimal solutions to prioritization problems.
 
 ```{r Figure1, eval=TRUE, echo=FALSE, fig.cap="Flow chart of the 3D prioritization analysis for the four depth zones considered in the @doxa20224d analysis", out.width = '100%', fig.align = "center"}
 knitr::include_graphics("fig1.jpg")
@@ -74,7 +74,8 @@ The **spatial coherence** of the solution maps can be evaluated through a post-p
 All the functions of the package prior3D can be installed in R via:
 
 ```{r}
-devtools::install_github("anonymous/prior3D")
+if (!require(remotes)) install.packages("remotes")
+remotes::install_github("cadam00/prior3D")
 ```
 
 ## **Illustration example**
@@ -128,7 +129,7 @@ biodiv_raster
 
 **Planning site, planning units and depth levels**
 
-In the illustration example, we consider as our planning site the Mediterranean Sea, with 0.5x0.5◦ cells as our planning unites (PUs). We consider four depth levels: (i) 0 to 40 m (infralittoral zone, extending to the lower limit of photophilic algae and seagrasses), (ii) 40 to 200 m (circalittoral zone, continental shelf, animal-dominated), (iii) 200 to 2000 m (\~continental slope), and (iv) exceeding 2000 m in depth (lower bathyal plains and abyssal zone) (Fig. \@ref(fig:Figure2)).
+In the illustration example, we consider as our planning site the Mediterranean Sea, with 0.5x0.5◦ cells as our planning unites (PUs). We consider four depth levels: (i) 0 to 40 m (infralittoral zone, extending to the lower limit of photophilic algae and seagrasses), (ii) 40 to 200 m (circalittoral zone, continental shelf, animal-dominated), (iii) 200 to 2000 m (\~continental slope), and (iv) exceeding 2000 m in depth (lower bathyal plains and abyssal zone) (Figure \@ref(fig:Figure2)).
 
 ```{r Figure2, eval=TRUE, echo=FALSE, fig.cap="The study area and the considered depth zones", out.width = '50%', fig.align = "center"}
 knitr::include_graphics("fig2.jpg")
@@ -210,7 +211,7 @@ single_3D <- prioritize_3D(split_features = split_features,
 
 The `prioritize_3D()` function is used to generate prioritization maps. Single budget settings (ex. `total_budget=0.3`) produce standard maps, as typical Marxan outputs. Multiple budgets, by using a vector (ex. `c(0.1,0.3,0.5)`, indicating available resources sufficient to protect 10%, 30% and 50% of the area) result in cumulative maps, illustrating areas selected by various budget levels. Although this output follows a different approach, it resembles to typical Zonation output maps.
 
-```{r Figure3, eval=TRUE, echo=FALSE, out.width = '100%', fig.align = "center"}
+```{r Figure3, eval=TRUE, echo=FALSE, out.width = '100%', fig.cap="Prioritization maps for single and multiple budgets", fig.align = "center"}
 knitr::include_graphics("fig3.jpg")
 ```
 

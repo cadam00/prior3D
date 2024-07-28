@@ -69,15 +69,6 @@ When opting for a comparative analysis of a 2D and a 3D SCP approach (second opt
 
 The **spatial coherence** of the solution maps can be evaluated through a post-processing analysis, which can be conducted after either the step-by-step or the comparative analysis. The necessary functions for this assessment are also provided within the package.
 
-## Installation
-
-All the functions of the package prior3D can be installed in R via:
-
-```{r}
-if (!require(remotes)) install.packages("remotes")
-remotes::install_github("cadam00/prior3D")
-```
-
 ## **Illustration example**
 
 Let us consider the following dataset as an illustrative example. It represents a subset of the species analyzed in @doxa20224d. For simplicity reasons, we have included only 20 species for demonstration purposes.

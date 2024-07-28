@@ -24,7 +24,7 @@ to prioritization problems.
 <p class="caption" align="center">
 <span id="fig-Figure1"></span>Figure 1: Flow chart of the 3D
 prioritization analysis for the four depth zones considered in the Doxa
-et al. ([2022](#ref-doxa20224d)) analysis
+et al. (<a href="#ref-doxa20224d">2022</a>) analysis
 </p>
 
 This tutorial will guide you through the key functions of the package,

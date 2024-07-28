@@ -10,7 +10,7 @@ incorporation of multiple costs at different depth levels, while
 facilitating users’ choices and parameterization. The process initiates
 from the deepest level and progressively moves toward the surface, by
 conducting a step-by-step prioritization analysis at each depth Figure
-[1](#ref-Figure1). The optimization result at each depth level is considered as
+[1](#fig-Figure1). The optimization result at each depth level is considered as
 a cost layer for the layer above. This approach gives priority to areas chosen
 in deeper waters when selecting areas at the subsequent upper level, thus
 creating a cascading prioritization structure. The **prior3D** package is built
@@ -155,7 +155,7 @@ We consider four depth levels: (i) 0 to 40 m (infralittoral zone, extending to
 the lower limit of photophilic algae and seagrasses), (ii) 40 to 200 m
 (circalittoral zone, continental shelf, animal-dominated), (iii) 200 to 2000 m
 (~continental slope), and (iv) exceeding 2000 m in depth (lower bathyal plains
-and abyssal zone) (Figure [2](#ref-Figure2)).
+and abyssal zone) (Figure [2](#fig-Figure2)).
 
 <p align="center">
   <img src="fig2.jpg" alt="The study area and the considered depth zones" width="50%" />

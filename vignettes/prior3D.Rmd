@@ -129,7 +129,7 @@ biodiv_raster
 
 **Planning site, planning units and depth levels**
 
-In the illustration example, we consider as our planning site the Mediterranean Sea, with 0.5$^\circ$x0.5$^\circ$ cells as our planning unites (PUs). We consider four depth levels: (i) 0 to 40 m (infralittoral zone, extending to the lower limit of photophilic algae and seagrasses), (ii) 40 to 200 m (circalittoral zone, continental shelf, animal-dominated), (iii) 200 to 2000 m (\~continental slope), and (iv) exceeding 2000 m in depth (lower bathyal plains and abyssal zone) (Figure \@ref(fig:Figure2)).
+In the illustration example, we consider as our planning site the Mediterranean Sea, with 0.5&deg;x0.5&deg; cells as our planning unites (PUs). We consider four depth levels: (i) 0 to 40 m (infralittoral zone, extending to the lower limit of photophilic algae and seagrasses), (ii) 40 to 200 m (circalittoral zone, continental shelf, animal-dominated), (iii) 200 to 2000 m (\~continental slope), and (iv) exceeding 2000 m in depth (lower bathyal plains and abyssal zone) (Figure \@ref(fig:Figure2)).
 
 ```{r Figure2, eval=TRUE, echo=FALSE, fig.cap="The study area and the considered depth zones", out.width = '50%', fig.align = "center"}
 knitr::include_graphics("fig2.jpg")

@@ -264,7 +264,7 @@ methods are available:
     depth levels with higher species diversity (number of species).
     (`budget_weights = "richness"`)
 
-### 0.5.3 **Step 3: Generating Outputs**
+### 5.3 **Step 3: Generating Outputs**
 
 **Prioritization Maps**
 
@@ -350,7 +350,7 @@ plot_3D(multuple_3D)
 percentages
 </p>
 
-## 0.6 **Comparative Analysis of a 2D and a 3D SCP approach**
+## 6 **Comparative Analysis of a 2D and a 3D SCP approach**
 
 To facilitate comparisons between 3D and 2D approaches, the
 `compare_2D_3D()` function is provided in the package. This function
@@ -382,7 +382,7 @@ plot_Compare_2D_3D(out_2D_3D, to_plot="all", add_lines=FALSE)
 for multiple budget percentages
 </p>
 
-## 0.7 **Spatial Coherence Metrics**
+## 7 **Spatial Coherence Metrics**
 
 The spatial coherence of the prioritization output (optimization
 solution) maps is assessed using three metrics: average surface
@@ -545,7 +545,7 @@ coherence(out_2D_3D, w=3, metric="rao")
 <span id="fig-Figure9"></span>Figure 9: RAO
 </p>
 
-## 0.8 **References**
+## 8 **References**
 
 Doxa, Aggeliki, Vasiliki Almpanidou, Stelios Katsanevakis, Ana M
 Queirós, Kristin Kaschner, Cristina Garilao, Kathleen Kesner-Reyes, and

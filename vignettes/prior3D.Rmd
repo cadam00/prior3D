@@ -253,10 +253,10 @@ multuple_3D <- prioritize_3D(split_features  = split_features,
 ## These checks indicate that solutions might not identify meaningful priority
 ## areas:
 ## 
-## ✖ Budget is greater than the total cost of selecting all planning units.
-## → Maybe you made a mistake when setting the `budget` in the objective function?
+##  Budget is greater than the total cost of selecting all planning units.
+##  Maybe you made a mistake when setting the `budget` in the objective function?
 ## 
-## ℹ For more information, see `presolve_check()`.
+##  For more information, see `presolve_check()`.
 ```
 
 ```{r}

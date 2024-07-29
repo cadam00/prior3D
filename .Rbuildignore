@@ -1,5 +1,6 @@
 ^.*\.Rproj$
 ^\.Rproj\.user$
+^\.Rhistory$
 ^dev$
 ^doc$
 ^Meta$

@@ -177,7 +177,7 @@ single_3D <- prioritize_3D(split_features  = split_features,
                            budget_percents = 0.3,
                            budget_weights  = "richness",
                            threads         = parallel::detectCores(),
-                           portfolio       = "gap", #"shuffle"
+                           portfolio       = "shuffle", #"shuffle"
                            portfolio_opts  = list(number_solutions = 10))
 ```
 
@@ -227,7 +227,7 @@ multuple_3D <- prioritize_3D(split_features  = split_features,
                              budget_percents = seq(0,1,0.1),
                              budget_weights  = "richness",
                              threads         = parallel::detectCores(),
-                             portfolio       = "gap",
+                             portfolio       = "shuffle",
                              portfolio_opts  = list(number_solutions = 10))
 
 ```
@@ -279,7 +279,7 @@ out_2D_3D <- Compare_2D_3D(biodiv_raster = biodiv_raster,
                            budget_percents = seq(0, 1, 0.1),
                            budget_weights = "richness",
                            threads = parallel::detectCores(),
-                           portfolio = "gap", #"shuffle"
+                           portfolio = "shuffle", #"shuffle"
                            portfolio_opts = list(number_solutions = 10))
 
 plot_Compare_2D_3D(out_2D_3D, to_plot="all", add_lines=FALSE)

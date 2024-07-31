@@ -10,11 +10,12 @@ bibliography: biblio.bib
 fontsize: 11pt
 urlcolor: blue
 linkcolor: blue
-link-citations: yes
+link-citations: true
+header-includes: \usepackage{float}
 vignette: >
-  %\VignetteIndexEntry{Introduction to prior3D}
-  \usepackage[utf8]{inputenc}
   %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteIndexEntry{Introduction to prior3D}
+  %\VignetteEncoding{UTF-8}
 ---
 
 ```{r setup, include=FALSE}
@@ -563,36 +564,44 @@ knitr::include_graphics("rao.jpg")
 <span id="fig-Figure9"></span>Figure 9: RAO
 </p>
 
-## 8 **References**
+## 7 **References**
+<!-- Could not add doi ulrs because of error from urlchecker::url_check
+Error in file(con, "r") : cannot open the connection
+See more at
+https://github.com/r-lib/urlchecker/issues/37
+-->
 
 Doxa, Aggeliki, Vasiliki Almpanidou, Stelios Katsanevakis, Ana M
 Queirós, Kristin Kaschner, Cristina Garilao, Kathleen Kesner-Reyes, and
 Antonios D Mazaris. 2022. “<span class="nocase" id="ref-doxa20224d">4D marine
 conservation networks: Combining 3D prioritization of present and future
 biodiversity with climatic refugia</span>.
-” *Global Change Biology* 28 (15): 4577–88. <https://doi.org/10.1111/gcb.16268>.
+*Global Change Biology* 28 (15): 4577–88.
+<!-- https://doi.org/10.1111/gcb.16268. -->
 
 Hanson, Jeffrey O, Richard Schuster, Nina Morrell, Matthew
 Strimas-Mackey, Brandon P M Edwards, Matthew E Watts, Peter Arcese,
 Joseph Bennett, and Hugh P Possingham. 2024.
 *<span class="nocase" id="ref-prioritizr">prioritizr: Systematic Conservation
-Prioritization in R</span>*. <https://prioritizr.net>.
+Prioritization in R</span>*.
+<!-- <https://prioritizr.net>. -->
 
 Rocchini, Duccio, Matteo Marcantonio, Daniele Da Re, Giovanni Bacaro,
 Enrico Feoli, Giles Foody, Reinhard Furrer, et al. 2021.
 “<span class="nocase" id = "ref-rasterdivpaper">From zero to infinity: Minimum 
 to maximum diversity of the planet by spatio-parametric Rao’s quadratic
-entropy</span>.” *Global Ecology and Biogeography* 30 (5): 2315.
-<https://doi.org/10.1111/geb.13270>.
+entropy</span>.*Global Ecology and Biogeography* 30 (5): 2315.
+<!-- <https://doi.org/10.1111/geb.13270>. -->
 
 Rocchini, Duccio, Elisa Thouverai, Matteo Marcantonio, Martina
 Iannacito, Daniele Da Re, Michele Torresani, Giovanni Bacaro, et al.
 2021. “<span class="nocase" id = "ref-rasterdiv">
 rasterdiv - An Information Theory tailored R package for measuring ecosystem
 heterogeneity from space: To the origin and back</span>.” *Methods in Ecology
-and Evolution* 12 (6): 2195. <https://doi.org/10.1111/2041-210X.13583>.
+and Evolution* 12 (6): 2195.
+<!-- <https://doi.org/10.1111/2041-210X.13583>. -->
 
 Smith, Annie C., Phoebe Zarnetske, Kyla Dahlin, Adam Wilson, and Andrew
 Latimer. 2023. <span class="nocase" id = "ref-geodiv"></span>*Geodiv: Methods
 for Calculating Gradient Surface Metrics*.
-<https://doi.org/10.32614/CRAN.package.geodiv>.
+<!-- <https://doi.org/10.32614/CRAN.package.geodiv>. -->

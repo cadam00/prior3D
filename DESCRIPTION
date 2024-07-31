@@ -32,5 +32,4 @@ BugReports: https://github.com/cadam00/prior3D/issues
 LazyData: true
 RoxygenNote: 7.3.2
 Depends: R (>= 2.10)
-VignetteBuilder: knitr
 Config/testthat/edition: 3

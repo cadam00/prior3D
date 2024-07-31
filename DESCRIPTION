@@ -10,7 +10,7 @@ Description: Toolset for 3D systematic conservation planning, conducting nested
              (Doxa et al. 2024 <doi:10.1111/gcb.16268>).
 Imports: 
     prioritizr (>= 8.0.4),
-    terra (>= 1.7.78),
+    terra,
     maps (>= 3.4.2),
     highs,
     viridis (>= 0.6.5),
@@ -23,7 +23,6 @@ Imports:
     graphics
 Suggests:
     knitr,
-    bookdown,
     rmarkdown,
     testthat (>= 3.0.0)
 License: GPL-3

@@ -579,6 +579,6 @@ heterogeneity from space: To the origin and back</span>.” *Methods in Ecology
 and Evolution* 12 (6): 2195. https://doi.org/10.1111/2041-210X.13583.
 
 Smith, Annie C., Phoebe Zarnetske, Kyla Dahlin, Adam Wilson, and Andrew
-Latimer. 2023. <span class="nocase" id = ref-geodiv></span>*Geodiv: Methods
+Latimer. 2023. <span class="nocase" id = "ref-geodiv"></span>*Geodiv: Methods
 for Calculating Gradient Surface Metrics*.
 https://doi.org/10.32614/CRAN.package.geodiv

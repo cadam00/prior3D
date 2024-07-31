@@ -75,7 +75,6 @@ further 3D analysis. List names are indicating the depth levels.
 }
 
 \examples{
-\dontrun{
 biodiv_raster <- get_biodiv_raster()
 depth_raster <- get_depth_raster()
 data(biodiv_df)
@@ -85,5 +84,4 @@ split_features <- split_rast(biodiv_raster,
                              depth_raster,
                              breaks = c(0, -40, -200, -2000, -Inf),
                              biodiv_df)
-}
 }

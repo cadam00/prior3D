@@ -17,10 +17,8 @@ Example of input \code{biodiv_df} used for functions.
 }
 
 \examples{
-\dontrun{
 data(biodiv_df)
 head(biodiv_df)
-}
 }
 
 \value{

@@ -24,8 +24,6 @@ A SpatRaster object.
 }
 
 \examples{
-\dontrun{
 feature_folder <- system.file("get_rast_example", package="prior3D")
 get_rast(feature_folder)
-}
 }

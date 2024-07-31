@@ -31,10 +31,8 @@ A numeric value \eqn{[0,1]}.
 }
 
 \examples{
-\dontrun{
 set.seed(42)
 x <- terra::rast(matrix(rbinom(100, 1, 0.2), nrow=10))
 y <- terra::rast(matrix(rbinom(100, 1, 0.8), nrow=10))
 terra_jaccard(x, y)
-}
 }

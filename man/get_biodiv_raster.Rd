@@ -27,8 +27,6 @@ for aquatic species. \href{https://www.aquamaps.org}{https://www.aquamaps.org}
 }
 
 \examples{
-\dontrun{
 biodiv_raster <- get_biodiv_raster()
 terra::plot(biodiv_raster[[1:4]])
-}
 }

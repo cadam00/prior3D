@@ -26,8 +26,6 @@ GEBCO Compilation Group. (2021). GEBCO 2021 Grid.
 }
 
 \examples{
-\dontrun{
 depth_raster <- get_depth_raster()
 terra::plot(depth_raster)
-}
 }

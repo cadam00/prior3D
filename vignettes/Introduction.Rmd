@@ -13,7 +13,7 @@ linkcolor: blue
 link-citations: true
 header-includes: \usepackage{float}
 vignette: >
-  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEngine{knitr::knitr}
   %\VignetteIndexEntry{Introduction to prior3D}
   %\VignetteEncoding{UTF-8}
 ---

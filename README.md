@@ -1,3 +1,5 @@
+**This work was supported by the European Union’s Horizon 2020 research and innovation programme HORIZON-CL6–2021-BIODIV-01–12 under grant agreement No 101059407 “MarinePlan – Improved transdisciplinary science for effective ecosystem-based maritime spatial planning and conservation in European Seas”.**
+
 ## 1 **Introduction to the prior3D Package (tutorial)**
 
 The **prior3D** package offers a comprehensive toolset for 3D systematic

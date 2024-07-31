@@ -2,12 +2,19 @@ Package: prior3D
 Type: Package
 Title: 3D Prioritization Algorithm
 Version: 0.1.0
-Author: Christos Adam [aut, cre], Nikolaos Nagkoulis [aut], Aggeliki Doxa [aut]
+Authors@R: c(person("Christos", "Adam", role = c("aut", "cre"), email = "econp266@econ.soc.uoc.gr"),
+             person("Nikolaos", "Nagkoulis", role = "aut", email = "nikolaosn@civil.auth.gr"),
+             person("Aggeliki", "Doxa", role = "aut", email = "angedoxa@bio.auth.gr"))
 Maintainer: Christos Adam <econp266@econ.soc.uoc.gr>
 Description: Toolset for 3D systematic conservation planning, conducting nested
              prioritization analyses across multiple depth levels and ensuring
              efficient  resource allocation throughout the water column
              (Doxa et al. 2024 <doi:10.1111/gcb.16268>).
+License: GPL-3
+Encoding: UTF-8
+URL: https://github.com/cadam00/prior3D
+BugReports: https://github.com/cadam00/prior3D/issues
+LazyData: true
 Imports: 
     prioritizr (>= 8.0.4),
     terra,
@@ -21,15 +28,10 @@ Imports:
     stats,
     utils,
     graphics
-Suggests:
+RoxygenNote: 7.3.2
+Suggests: 
     knitr,
     rmarkdown,
     testthat (>= 3.0.0)
-License: GPL-3
-Encoding: UTF-8
-URL: https://github.com/cadam00/prior3D
-BugReports: https://github.com/cadam00/prior3D/issues
-LazyData: true
-RoxygenNote: 7.3.2
-Depends: R (>= 2.10)
 Config/testthat/edition: 3
+VignetteBuilder: knitr

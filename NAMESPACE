@@ -1,7 +1,6 @@
 import(prioritizr)
 import(terra)
 import(highs)
-import(tools)
 importFrom("graphics", "axis", "layout", "legend", "matplot")
 importFrom("stats", "sd")
 importFrom("utils", "read.csv")

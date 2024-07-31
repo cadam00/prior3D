@@ -2,7 +2,7 @@
 title: "Introduction to prior3D"
 author: "Christos Adam, Nikolaos Nagkoulis, Aggeliki Doxa"
 output:
-  html_document:
+  rmarkdown::html_vignette:
     number_sections: false
   word_document: default
   pdf_document: default
@@ -13,7 +13,7 @@ linkcolor: blue
 link-citations: true
 header-includes: \usepackage{float}
 vignette: >
-  %\VignetteEngine{knitr::knitr}
+  %\VignetteEngine{knitr::rmarkdown}
   %\VignetteIndexEntry{Introduction to prior3D}
   %\VignetteEncoding{UTF-8}
 ---

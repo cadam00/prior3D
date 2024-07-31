@@ -2,7 +2,7 @@
 title: "Introduction to prior3D"
 author: "Christos Adam, Nikolaos Nagkoulis, Aggeliki Doxa"
 output:
-  rmarkdown::html_vignette:
+  html_document:
     number_sections: false
   word_document: default
   pdf_document: default

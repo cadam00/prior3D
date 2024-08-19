@@ -11,6 +11,8 @@ evaluate_3D.Rd, plot_3D.Rd, plot_Compare_2D_3D.Rd, prioritize_3D.Rd. The reason
 is the use of commercial software required for running option
 `portfolio = "gap"`.
 
+-   Replaced `print()` with `message()` -> R/rfunctions.R.
+
 ## R CMD check results
 
 0 errors \| 0 warnings \| 1 note

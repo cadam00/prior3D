@@ -194,7 +194,11 @@ https://rpubs.com/jlehtoma/priocomp}
 }
 
 \examples{
-\donttest{
+\dontrun{
+## This example requires commercial solver from 'gurobi' package for
+## portfolio = "gap". Else replace it with e.g. portfolio = "shuffle" for using
+## a free solver like the one from 'highs' package.
+
 biodiv_raster <- get_biodiv_raster()
 depth_raster <- get_depth_raster()
 data(biodiv_df)

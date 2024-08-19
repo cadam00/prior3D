@@ -1070,7 +1070,7 @@ Compare_2D_3D <- function(biodiv_raster,
     matrix(nrow=length_budget_percents,ncol=nlyr(split_features[[1]]))
   jaccard_coef <- rep(0, length_budget_percents)
   for (i in 1:length_budget_percents){
-    print(paste0("Budget: ", budget_percents[i]))
+    message(paste0("Budget: ", budget_percents[i]))
     solution3D[[i]] <- .single_3D(split_features=split_features,
                                   depth_raster=depth_raster,
                                   breaks=breaks,
@@ -1406,7 +1406,7 @@ prioritize_3D <- function(split_features,
   overall_held3D <-
     matrix(nrow=length_budget_percents,ncol=nlyr(split_features[[1]]))
   for (i in 1:length_budget_percents){
-    print(paste0("Budget: ", budget_percents[i]))
+    message(paste0("Budget: ", budget_percents[i]))
     solution3D[[i]] <- .single_3D(split_features=split_features,
                                   depth_raster=depth_raster,
                                   breaks=breaks,
@@ -1617,12 +1617,12 @@ coherence <- function(x, w, metric="sa", normalize = TRUE, plot = TRUE,
 
       } else if (metric == "rao"){
 
-        print("2D RAO")
+        message("2D RAO")
         RAO_2D <- rasterdiv::paRao(x=raster_data_2D,window=w,
                                    na.tolerance=1.0,method="classic", ...)
         mean_2D <- global(RAO_2D[[1]]$alpha.1,"mean",na.rm=T)
 
-        print("3D RAO")
+        message("3D RAO")
         RAO_3D <- rasterdiv::paRao(x=raster_data_3D,window=w,
                                    na.tolerance=1.0,method="classic", ...)
         mean_3D <- global(RAO_3D[[1]]$alpha.1,"mean",na.rm=T)

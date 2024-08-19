@@ -194,7 +194,7 @@ https://rpubs.com/jlehtoma/priocomp}
 }
 
 \examples{
-\dontrun{
+\donttest{
 biodiv_raster <- get_biodiv_raster()
 depth_raster <- get_depth_raster()
 data(biodiv_df)

@@ -39,13 +39,18 @@ in ellipsis (\code{...}) further arguments of
 (\code{...}) further arguments of \code{rasterdiv::paRao} are passed.
 }
 
+\value{
+\code{numeric} vector with 2D and 3D metrics. The result maps are optionally
+ploted.
+}
+
 \references{
 Rocchini, Duccio, Matteo Marcantonio, Daniele Da Re, Giovanni Bacaro, Enrico Feoli, Giles
 Foody, Reinhard Furrer, et al. 2021. "From zero to infinity: Minimum to maximum diversity
 of the planet by spatio-parametric Rao’s quadratic entropy." Global Ecology and
 Biogeography 30 (5): 2315.
 \doi{10.1111/geb.13270}.
- 
+
 Rocchini, Duccio, Elisa Thouverai, Matteo Marcantonio, Martina Iannacito, Daniele Da Re,
 Michele Torresani, Giovanni Bacaro, et al. 2021. "rasterdiv - An Information Theory
 tailored R package for measuring ecosystem heterogeneity from space: To the origin and
@@ -68,7 +73,7 @@ https://CRAN.R-project.org/package=maps}
 }
 
 \examples{
-\dontrun{
+\donttest{
 biodiv_raster <- get_biodiv_raster()
 depth_raster <- get_depth_raster()
 data(biodiv_df)

@@ -2,7 +2,7 @@
 \alias{prioritize_3D}
 \title{3D prioritization algorithm}
 \usage{
-prioritize_3D(split_features, depth_raster, breaks, biodiv_df = NULL,
+prioritize_3D(split_features, depth_raster, breaks, biodiv_df,
 priority_weights = NULL, budget_percents = seq(0,1,0.1), budget_weights = "equal",
 penalty = 0, edge_factor = 0.5, gap = 0.1, threads = 1L, sep_priority_weights = ",",
 portfolio = "gap", portfolio_opts = list(number_solutions = 10, pool_gap = 0.1),

@@ -6,9 +6,9 @@ Authors@R: c(person("Christos", "Adam", role = c("aut", "cre"), email = "econp26
              person("Nikolaos", "Nagkoulis", role = "aut", email = "nikolaosn@civil.auth.gr"),
              person("Aggeliki", "Doxa", role = "aut", email = "angedoxa@bio.auth.gr"))
 Maintainer: Christos Adam <econp266@econ.soc.uoc.gr>
-Description: 3D systematic conservation planning, conducting nested
-             prioritization analyses across multiple depth levels and ensuring
-             efficient  resource allocation throughout the water column
+Description: Algorithm for 3D systematic conservation planning, conducting
+             nested prioritization analyses across multiple depth levels and
+             ensuring efficient  resource allocation throughout the water column
              (Doxa et al. 2024 <doi:10.1111/gcb.16268>). It provides a
              structured workflow designed to address biodiversity conservation
              and management challenges in the 3 dimensions, such as the

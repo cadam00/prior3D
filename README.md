@@ -1,5 +1,6 @@
 <!-- badges: start -->
-  [![CRAN status](https://www.r-pkg.org/badges/version/prior3D)](https://CRAN.R-project.org/package=prior3D)
+[![CRAN status](https://www.r-pkg.org/badges/version/prior3D)](https://CRAN.R-project.org/package=prior3D)
+[![](https://img.shields.io/badge/devel%20version-0.1.1-blue.svg)](https://CRAN.R-project.org/package=prior3D)
   [![R-CMD-check](https://github.com/cadam00/prior3D/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/cadam00/prior3D/actions/workflows/R-CMD-check.yaml)
   <!-- badges: end -->
 
@@ -79,6 +80,17 @@ step-by-step or the comparative analysis. The necessary functions for
 this assessment are also provided within the package.
 
 ## 3 Installation
+
+All the functions of the package prior3D can be installed in R via:
+``` r
+install.packages("prior3D")
+```
+
+Alternatively, development version of the package can be installed using:
+``` r
+if (!require(remotes)) install.packages("remotes")
+remotes::install_github("cadam00/prior3D")
+```
 
 All the functions of the package prior3D can be installed in R via:
 

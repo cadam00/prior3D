@@ -1,7 +1,7 @@
 Package: prior3D
 Type: Package
 Title: 3D Prioritization Algorithm
-Version: 0.1.0
+Version: 0.1.1
 Authors@R: c(person("Christos", "Adam", role = c("aut", "cre"), email = "econp266@econ.soc.uoc.gr"),
              person("Nikolaos", "Nagkoulis", role = "aut", email = "nikolaosn@civil.auth.gr"),
              person("Aggeliki", "Doxa", role = "aut", email = "angedoxa@bio.auth.gr"))

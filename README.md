@@ -92,13 +92,6 @@ if (!require(remotes)) install.packages("remotes")
 remotes::install_github("cadam00/prior3D")
 ```
 
-All the functions of the package prior3D can be installed in R via:
-
-``` r
-if (!require(remotes)) install.packages("remotes")
-remotes::install_github("cadam00/prior3D")
-```
-
 ## 4 **Illustration example**
 
 Let us consider the following dataset as an illustrative example. It

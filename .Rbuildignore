@@ -8,3 +8,4 @@
 ^\.github$
 ^biblio\.bib$
 ^cran-comments\.md$
+^LICENSE$

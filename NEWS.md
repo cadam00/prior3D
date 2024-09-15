@@ -4,6 +4,8 @@
 
 - Update README.md badges and text.
 
+- Create pkgdown website.
+
 # prior3D 0.1.0
 
 ## Major changes

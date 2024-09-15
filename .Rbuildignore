@@ -9,3 +9,6 @@
 ^biblio\.bib$
 ^cran-comments\.md$
 ^LICENSE$
+^_pkgdown\.yml$
+^docs$
+^pkgdown$

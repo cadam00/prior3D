@@ -4,5 +4,5 @@ template:
 
 navbar:
   structure:
-    left:  [intro, reference, tutorials, news]
+    left:  [intro, reference, news]
     right: [search, github, lightswitch]

@@ -1,9 +1,4 @@
 url: https://cadam00.github.io/prior3D/
 template:
   bootstrap: 5
-navbar:
-  structure:
-    left:
-    - reference
-    - news
 

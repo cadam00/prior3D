@@ -256,7 +256,7 @@ reflects the desired level of protection to be modeled. It ranges from 0
 to 1, with 0 indicating no resources available for protection, while 1
 signifies resources sufficient to protect the entire study area.
 Typically, setting a budget of 0.3 corresponds to the 30% conservation
-target (i.e. 30% of the total area set aside for conservation). Users
+target (i.e. 30% of the total area set aside for conservation). Users
 also have the flexibility to define multiple budget levels using a
 vector, allowing for the exploration of various protection scenarios.
 For instance, a vector like `c(0.1, 0.3, 0.5)` represents three
@@ -385,7 +385,7 @@ out_2D_3D <- Compare_2D_3D(biodiv_raster = biodiv_raster,
                            portfolio = "gap", #"shuffle"
                            portfolio_opts = list(number_solutions = 10))
 
-plot_Compare_2D_3D(out_2D_3D, to_plot="all", add_lines=FALSE)
+plot_Compare_2D_3D(out_2D_3D, to_plot="all", add_lines=TRUE)
 ```
 
 <p align="center">

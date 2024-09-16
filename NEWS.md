@@ -4,6 +4,8 @@
 
 - Update README.md badges and text.
 
+- Use `rev(terrain.colors(255))` for plots.
+
 - Create pkgdown website.
 
 # prior3D 0.1.0

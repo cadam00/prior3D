@@ -696,6 +696,7 @@ plot_3D <- function(x, to_plot="all", add_lines=TRUE){
                  heights = c(0.4, 0.4, 0.2))
           plot(classify(sumrast(x$solution3D), c(0, 0.5, 0.6, 0.7, 0.8, 0.9, 1),
                         include.lowest=TRUE, brackets=TRUE),
+               col = rev(terrain.colors(255)),
                main="3D\nSum plot", all_levels=TRUE)
           if (add_lines) maps::map(add=TRUE)
           matplot(x$budget_percent, x$relative_helds3D, type="l", col=cols,
@@ -714,7 +715,8 @@ plot_3D <- function(x, to_plot="all", add_lines=TRUE){
         } else {
           cols <- rev(viridis::viridis(length(x$depth_levels_names)))
           layout(mat = matrix(c(1,2),nrow = 2,ncol = 1, byrow = TRUE))
-          plot(x$solution3D[[1]], main="3D\nSum plot")
+          plot(x$solution3D[[1]], main="3D\nSum plot",
+               col = rev(terrain.colors(255)))
           if (add_lines) maps::map(add=TRUE)
           barplot(x$relative_helds3D,
                   main = "Relative held", ylim=c(0,1), yaxt='n')
@@ -727,11 +729,13 @@ plot_3D <- function(x, to_plot="all", add_lines=TRUE){
           layout(mat = matrix(1))
           plot(classify(sumrast(x$solution3D), c(0, 0.5, 0.6, 0.7, 0.8, 0.9, 1),
                         include.lowest=TRUE, brackets=TRUE),
-               main="3D\nSum plot", all_levels=TRUE)
+               main="3D\nSum plot", all_levels=TRUE,
+               col = rev(terrain.colors(255)))
           if (add_lines) maps::map(add=TRUE)
         } else {
           layout(mat = matrix(1))
-          plot(x$solution3D[[1]], main="3D\nSum plot")
+          plot(x$solution3D[[1]], main="3D\nSum plot",
+                        col = rev(terrain.colors(255)))
           if (add_lines) maps::map(add=TRUE)
         }
 
@@ -777,10 +781,12 @@ plot_Compare_2D_3D <- function(x, to_plot="all", add_lines=TRUE){
                  heights = c(0.4, 0.4, 0.2))
           plot(classify(sumrast(x$solution2D), c(0, 0.5, 0.6, 0.7, 0.8, 0.9, 1),
                         include.lowest=TRUE, brackets=TRUE),
+               col = rev(terrain.colors(255)),
                main="2D\nSum plot", all_levels=TRUE)
           if (add_lines) maps::map(add=TRUE)
           plot(classify(sumrast(x$solution3D), c(0, 0.5, 0.6, 0.7, 0.8, 0.9, 1),
                         include.lowest=TRUE, brackets=TRUE),
+               col = rev(terrain.colors(255)),
                main="3D\nSum plot", all_levels=TRUE)
           if (add_lines) maps::map(add=TRUE)
           ylim <- c(min(x$relative_helds2D, x$relative_helds3D),
@@ -811,9 +817,11 @@ plot_Compare_2D_3D <- function(x, to_plot="all", add_lines=TRUE){
           cols <- rev(viridis::viridis(length(x$depth_levels_names)))
           layout(mat = matrix(c(1,2, 3, 4),nrow = 2,ncol = 2,byrow = TRUE),
                  heights = c(0.4, 0.4, 0.2))
-          plot(x$solution2D[[1]], main="2D\n\nSum plot")
+          plot(x$solution2D[[1]], main="2D\n\nSum plot",
+               col = rev(terrain.colors(255)))
           if (add_lines) maps::map(add=TRUE)
-          plot(x$solution3D[[1]], main="3D\n\nSum plot")
+          plot(x$solution3D[[1]], main="3D\n\nSum plot",
+               col = rev(terrain.colors(255)))
           if (add_lines) maps::map(add=TRUE)
           barplot(x$relative_helds2D, main = "2D\nRelative held",
                   ylim=c(0,1), yaxt='n')
@@ -829,18 +837,22 @@ plot_Compare_2D_3D <- function(x, to_plot="all", add_lines=TRUE){
           layout(mat = matrix(c(1,2),nrow = 1,ncol = 2,byrow = TRUE))
           plot(classify(sumrast(x$solution2D), c(0, 0.5, 0.6, 0.7, 0.8, 0.9, 1),
                         include.lowest=TRUE, brackets=TRUE),
+               col = rev(terrain.colors(255)),
                main="2D\nSum plot", all_levels=TRUE)
           if (add_lines) maps::map(add=TRUE)
           plot(classify(sumrast(x$solution3D), c(0, 0.5, 0.6, 0.7, 0.8, 0.9, 1),
                         include.lowest=TRUE, brackets=TRUE),
+               col = rev(terrain.colors(255)),
                main="3D\nSum plot", all_levels=TRUE)
           if (add_lines) maps::map(add=TRUE)
           layout(mat = matrix(1))
         } else {
           layout(mat = matrix(c(1,2),nrow = 1,ncol = 2,byrow = TRUE))
-          plot(x$solution2D[[1]], main="2D\nSum plot")
+          plot(x$solution2D[[1]], main="2D\nSum plot",
+               col = rev(terrain.colors(255)))
           if (add_lines) maps::map(add=TRUE)
-          plot(x$solution3D[[1]], main="3D\nSum plot")
+          plot(x$solution3D[[1]], main="3D\nSum plot",
+               col = rev(terrain.colors(255)))
           if (add_lines) maps::map(add=TRUE)
           layout(mat = matrix(1))
         }
@@ -1559,11 +1571,13 @@ coherence <- function(x, w, metric="sa", normalize = TRUE, plot = TRUE,
           layout(mat = matrix(c(1,2),nrow = 1,ncol = 2,byrow = TRUE))
           terra::plot(ff_raster_2D_sa$sa,
                       main=paste0("2D SA=", round(mean_val2d, 3),
-                                  " (window=", nrow(w), "x", ncol(w), ")"))
+                                  " (window=", nrow(w), "x", ncol(w), ")"),
+                      col = rev(terrain.colors(255)))
           if (addlines) maps::map(add=TRUE)
           terra::plot(ff_raster_3D_sa$sa,
                       main=paste0("3D SA=", round(mean_val3d, 3),
-                                  " (window=", nrow(w), "x", ncol(w), ")"))
+                                  " (window=", nrow(w), "x", ncol(w), ")"),
+                      col = rev(terrain.colors(255)))
           if (addlines) maps::map(add=TRUE)
           layout(mat = matrix(1))
         }
@@ -1599,11 +1613,13 @@ coherence <- function(x, w, metric="sa", normalize = TRUE, plot = TRUE,
           layout(mat = matrix(c(1,2),nrow = 1,ncol = 2,byrow = TRUE))
           terra::plot(ff_raster_2D_sku$sku,
                       main=paste0("2D SKU=", round(mean_val2d, 3),
-                                  " (window=", nrow(w), "x", ncol(w), ")"))
+                                  " (window=", nrow(w), "x", ncol(w), ")"),
+                      col = rev(terrain.colors(255)))
           maps::map(add=TRUE)
           terra::plot(ff_raster_3D_sku$sku,
                       main=paste0("3D SKU=", round(mean_val3d, 3),
-                                  " (window=", nrow(w), "x", ncol(w), ")"))
+                                  " (window=", nrow(w), "x", ncol(w), ")"),
+                      col = rev(terrain.colors(255)))
           maps::map(add=TRUE)
           layout(mat = matrix(1))
         }
@@ -1631,11 +1647,13 @@ coherence <- function(x, w, metric="sa", normalize = TRUE, plot = TRUE,
           layout(mat = matrix(c(1,2),nrow = 1,ncol = 2,byrow = TRUE))
           terra::plot(RAO_2D[[1]]$alpha.1,
                       main=paste0("2D RAO=",round(mean_2D,3),
-                                  " (window=", w, "x", w, ")"))
+                                  " (window=", w, "x", w, ")"),
+                      col = rev(terrain.colors(255)))
           maps::map(add=TRUE)
           terra::plot(RAO_3D[[1]]$alpha.1,
                       main=paste0("3D RAO=",round(mean_3D,3),
-                                  " (window=", w, "x", w, ")"))
+                                  " (window=", w, "x", w, ")"),
+                      col = rev(terrain.colors(255)))
           maps::map(add=TRUE)
           layout(mat = matrix(1))
         }

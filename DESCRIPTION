@@ -31,7 +31,8 @@ Imports:
     methods,
     stats,
     utils,
-    graphics
+    graphics,
+    grDevices
 RoxygenNote: 7.3.2
 Suggests: 
     knitr,

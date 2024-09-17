@@ -10,6 +10,7 @@ importFrom("methods", "is")
 importFrom("maps", "map")
 importFrom("viridis", "viridis")
 importFrom("readxl", "read_xlsx", "read_xls")
+importFrom("grDevices", "terrain.colors")
 
 exportPattern("^[[:alpha:]]+")
 exportPattern("^[^\\.]")

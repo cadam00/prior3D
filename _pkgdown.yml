@@ -3,6 +3,14 @@ template:
   bootstrap: 5
 
 navbar:
+  left:
+    - icon: fa-home
+      href: index.html
+      aria-label: GitHub
+    - text: Reference
+      href: reference/index.html
+    - text: News
+      href: news/index.html
   structure:
     left:  [intro, reference, news]
-    right: [search, github, lightswitch]
+    right: [github, lightswitch]

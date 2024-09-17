@@ -2,9 +2,11 @@
 title: "Introduction to prior3D"
 author: "Christos Adam, Nikolaos Nagkoulis, Aggeliki Doxa"
 output:
+  html_document:
+    df_print: paged
+  word_document: default
   rmarkdown::html_vignette:
     number_sections: false
-  word_document: default
   pdf_document: default
 bibliography: biblio.bib
 fontsize: 11pt
@@ -13,9 +15,9 @@ linkcolor: blue
 link-citations: true
 header-includes: \usepackage{float}
 vignette: >
-  %\VignetteEngine{knitr::rmarkdown}
   %\VignetteIndexEntry{Introduction to prior3D}
   %\VignetteEncoding{UTF-8}
+  %\VignetteEngine{knitr::rmarkdown}
 ---
 
 ```{r setup, include=FALSE}
@@ -44,9 +46,12 @@ upon the **prioritizr** package ([Hanson et al. 2024](#ref-prioritizr)), using
 commercial and open-source exact algorithm solvers that ensure optimal solutions
 to prioritization problems.
 
-```{r Figure1, eval=TRUE, echo=FALSE, out.width = '100%', fig.align = "center"}
-knitr::include_graphics("fig1.jpg")
-```
+
+<p align="center">
+  <img src="fig1.jpg"
+  alt="Figure 1: Flow chart of the 3D prioritization analysis for the four depth
+  zones considered in the @doxa20224d analysis" width="100%" />
+</p>
 <p class="caption" align="center">
 <span id="fig-Figure1"></span>Figure 1: Flow chart of the 3D
 prioritization analysis for the four depth zones considered in the Doxa
@@ -174,9 +179,10 @@ the lower limit of photophilic algae and seagrasses), (ii) 40 to 200 m
 (~continental slope), and (iv) exceeding 2000 m in depth (lower bathyal plains
 and abyssal zone) (Figure [2](#fig-Figure2)).
 
-```{r Figure2, eval=TRUE, echo=FALSE, out.width = '50%', fig.align = "center"}
-knitr::include_graphics("fig2.jpg")
-```
+<p align="center">
+  <img src="fig2.jpg"
+  alt="Figure 2: The study area and the considered depth zones" width="50%" />
+</p>
 <p class="caption" align="center">
 <span id="fig-Figure2"></span>Figure 2: The study area and the
 considered depth zones
@@ -295,9 +301,11 @@ areas selected by various budget levels. Although this output follows a
 different approach, it resembles to typical Zonation output maps.
 
 
-```{r Figure3, eval=TRUE, echo=FALSE, out.width = '100%', fig.align = "center"}
-knitr::include_graphics("fig3.jpg")
-```
+<p align="center">
+  <img src="fig3.jpg"
+  alt="Figure 3: Prioritization maps for single and multiple budget percentages"
+  width="100%" style="display: block; margin: auto;" />
+</p>
 <p class="caption" align="center">
 <span id="fig-Figure3"></span>Figure 3: Prioritization maps for single and
 multiple budget percentages
@@ -308,9 +316,11 @@ multiple budget percentages
 plot_3D(single_3D, to_plot="all")
 ```
 
-```{r Figure4, eval=TRUE, echo=FALSE, out.width = '60%', fig.align = "center"}
-knitr::include_graphics("fig4.jpg")
-```
+<p align="center">
+  <img src="fig4.jpg"
+  alt="Figure 4: Output for 30% budget percentage"
+  width="60%" />
+</p>
 <p class="caption" align="center">
 <span id="fig-Figure4"></span>Figure 4: Output for 30% budget percentage
 </p>
@@ -361,9 +371,11 @@ multuple_3D <- prioritize_3D(split_features  = split_features,
 plot_3D(multuple_3D)
 ```
 
-```{r Figure5, eval=TRUE, echo=FALSE, out.width = '75%', fig.align = "center"}
-knitr::include_graphics("fig5.jpg")
-```
+<p align="center">
+  <img src="fig5.jpg"
+  alt="Figure 5: Output for multiple budget percentages"
+  width="75%" />
+</p>
 <p class="caption" align="center">
 <span id="fig-Figure5"></span>Figure 5: Output for multiple budget
 percentages
@@ -393,9 +405,12 @@ out_2D_3D <- Compare_2D_3D(biodiv_raster = biodiv_raster,
 plot_Compare_2D_3D(out_2D_3D, to_plot="all", add_lines=TRUE)
 ```
 
-```{r Figure6, eval=TRUE, echo=FALSE, out.width = '75%', fig.align = "center"}
-knitr::include_graphics("fig6.jpg")
-```
+<p align="center">
+  <img src="fig6.jpg"
+  alt="Figure 6: Comparison of 2D vs 3D approach for multiple budget
+  percentages"
+  width="75%" />
+</p>
 <p class="caption" align="center">
 <span id="fig-Figure6"></span>Figure 6: Comparison of 2D vs 3D approach
 for multiple budget percentages
@@ -434,9 +449,9 @@ coherence(out_2D_3D, w=3)
 ## 3.806 3.503 2.413 2.118 
 ```
 
-```{r Figure7, eval=TRUE, out.width = '75%', fig.align = "center"}
-knitr::include_graphics("sa.jpg")
-```
+<p align="center">
+  <img src="sa.jpg" alt="Figure 7: SA" width="75%" />
+</p>
 <p class="caption" align="center">
 <span id="fig-Figure7"></span>Figure 7: SA
 </p>
@@ -452,9 +467,9 @@ coherence(out_2D_3D, w=3, metric="sku")
 ## 0.347  1.138 -0.536 -0.374 
 ```
 
-```{r Figure8, eval=TRUE, echo=FALSE, out.width = '75%', fig.align = "center"}
-knitr::include_graphics("sku.jpg")
-```
+<p align="center">
+  <img src="sku.jpg" alt="Figure 8: SKU" width="75%" />
+</p>
 <p class="caption" align="center">
 <span id="fig-Figure8"></span>Figure 8: SKU
 </p>
@@ -557,9 +572,9 @@ coherence(out_2D_3D, w=3, metric="rao")
 ## 4: In rasterdiv::paRao(x = raster_data_3D, window = w, na.tolerance = 1,  :
 ##   Input data are float numbers. Converting data to integer matrices.
 ```
-```{r Figure9, eval=TRUE, echo=FALSE, out.width = '75%', fig.align = "center"}
-knitr::include_graphics("rao.jpg")
-```
+<p align="center">
+  <img src="rao.jpg" alt="Figure 9: RAO" width="75%" />
+</p>
 <p class="caption" align="center">
 <span id="fig-Figure9"></span>Figure 9: RAO
 </p>

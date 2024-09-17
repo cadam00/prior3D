@@ -52,7 +52,8 @@
 </h2>
 <p>The <strong>prior3D</strong> package offers a comprehensive toolset for 3D systematic conservation planning, conducting nested prioritization analyses across multiple depth levels and ensuring efficient resource allocation throughout the water column (<a href="#ref-doxa20224d">Doxa et al. 2022</a>). It provides a structured workflow designed to address biodiversity conservation and management challenges in the 3 dimensions, such as the incorporation of multiple costs at different depth levels, while facilitating users’ choices and parameterization. The process initiates from the deepest level and progressively moves toward the surface, by conducting a step-by-step prioritization analysis at each depth Figure <a href="#fig-Figure1">1</a>. The optimization result at each depth level is considered as a cost layer for the layer above. This approach gives priority to areas chosen in deeper waters when selecting areas at the subsequent upper level, thus creating a cascading prioritization structure. The <strong>prior3D</strong> package is built upon the <strong>prioritizr</strong> package (<a href="#ref-prioritizr">Hanson et al. 2024</a>), using commercial and open-source exact algorithm solvers that ensure optimal solutions to prioritization problems.</p>
 <p align="center">
-<img src="reference/figures/fig1.jpg" alt="Flow chart of the 3D prioritization analysis for the four depth zones considered in the @doxa20224d analysis" width="100%"></p>
+<img src="reference/figures/fig1.jpg" alt="Figure 1: Flow chart of the 3D prioritization analysis for the four depth
+  zones considered in the @doxa20224d analysis" width="100%"></p>
 <p class="caption" align="center">
 <span id="fig-Figure1"></span>Figure 1: Flow chart of the 3D prioritization analysis for the four depth zones considered in the Doxa et al. (<a href="#ref-doxa20224d">2022</a>) analysis
 </p>
@@ -131,7 +132,7 @@
 <p><strong>Planning site, planning units and depth levels</strong></p>
 <p>In the illustration example, we consider as our planning site the Mediterranean Sea, with 0.5°x0.5° cells as our planning unites (PUs). We consider four depth levels: (i) 0 to 40 m (infralittoral zone, extending to the lower limit of photophilic algae and seagrasses), (ii) 40 to 200 m (circalittoral zone, continental shelf, animal-dominated), (iii) 200 to 2000 m (~continental slope), and (iv) exceeding 2000 m in depth (lower bathyal plains and abyssal zone) (Figure <a href="#fig-Figure2">2</a>).</p>
 <p align="center">
-<img src="reference/figures/fig2.jpg" alt="The study area and the considered depth zones" width="50%"></p>
+<img src="reference/figures/fig2.jpg" alt="Figure 2: The study area and the considered depth zones" width="50%"></p>
 <p class="caption" align="center">
 <span id="fig-Figure2"></span>Figure 2: The study area and the considered depth zones
 </p>
@@ -203,7 +204,7 @@
 <p><strong>Prioritization Maps</strong></p>
 <p>The <code><a href="reference/prioritize_3D.html">prioritize_3D()</a></code> function is used to generate prioritization maps. Single budget settings (ex. <code>total_budget=0.3</code>) produce standard maps, as typical Marxan outputs. Multiple budgets, by using a vector (ex. <code>c(0.1,0.3,0.5)</code>, indicating available resources sufficient to protect 10%, 30% and 50% of the area) result in cumulative maps, illustrating areas selected by various budget levels. Although this output follows a different approach, it resembles to typical Zonation output maps.</p>
 <p align="center">
-<img src="reference/figures/fig3.jpg" width="100%" style="display: block; margin: auto;"></p>
+<img src="reference/figures/fig3.jpg" alt="Figure 3: Prioritization maps for single and multiple budget percentages" width="100%" style="display: block; margin: auto;"></p>
 <p class="caption" align="center">
 <span id="fig-Figure3"></span>Figure 3: Prioritization maps for single and multiple budget percentages
 </p>
@@ -211,7 +212,7 @@
 <code class="sourceCode R"><span><span class="co"># Create plot of outputs for a single budget percentage</span></span>
 <span><span class="fu"><a href="reference/plot_3D.html">plot_3D</a></span><span class="op">(</span><span class="va">single_3D</span>, to_plot<span class="op">=</span><span class="st">"all"</span>, add_lines<span class="op">=</span><span class="cn">FALSE</span><span class="op">)</span></span></code></pre></div>
 <p align="center">
-<img src="reference/figures/fig4.jpg" alt="Output for 30% budget percentage" width="60%"></p>
+<img src="reference/figures/fig4.jpg" alt="Figure 4: Output for 30% budget percentage" width="60%"></p>
 <p class="caption" align="center">
 <span id="fig-Figure4"></span>Figure 4: Output for 30% budget percentage
 </p>
@@ -255,7 +256,7 @@
 <div class="sourceCode" id="cb15"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="reference/plot_3D.html">plot_3D</a></span><span class="op">(</span><span class="va">multuple_3D</span><span class="op">)</span></span></code></pre></div>
 <p align="center">
-<img src="reference/figures/fig5.jpg" alt="Output for multiple budget percentages" width="75%"></p>
+<img src="reference/figures/fig5.jpg" alt="Figure 5: Output for multiple budget percentages" width="75%"></p>
 <p class="caption" align="center">
 <span id="fig-Figure5"></span>Figure 5: Output for multiple budget percentages
 </p>
@@ -279,7 +280,8 @@
 <span></span>
 <span><span class="fu"><a href="reference/plot_Compare_2D_3D.html">plot_Compare_2D_3D</a></span><span class="op">(</span><span class="va">out_2D_3D</span>, to_plot<span class="op">=</span><span class="st">"all"</span>, add_lines<span class="op">=</span><span class="cn">TRUE</span><span class="op">)</span></span></code></pre></div>
 <p align="center">
-<img src="reference/figures/fig6.jpg" alt="Comparison of 2D vs 3D approach for multiple budget percentages" width="75%"></p>
+<img src="reference/figures/fig6.jpg" alt="Figure 6: Comparison of 2D vs 3D approach for multiple budget
+  percentages" width="75%"></p>
 <p class="caption" align="center">
 <span id="fig-Figure6"></span>Figure 6: Comparison of 2D vs 3D approach for multiple budget percentages
 </p>
@@ -299,7 +301,7 @@
 <span><span class="co">##  sa2D  sa3D sa2Dw sa3Dw </span></span>
 <span><span class="co">## 3.806 3.503 2.413 2.118 </span></span></code></pre></div>
 <p align="center">
-<img src="reference/figures/sa.jpg" alt="SA" width="75%"></p>
+<img src="reference/figures/sa.jpg" alt="Figure 7: SA" width="75%"></p>
 <p class="caption" align="center">
 <span id="fig-Figure7"></span>Figure 7: SA
 </p>
@@ -311,7 +313,7 @@
 <span><span class="co">## sku2D  sku3D sku2Dw sku3Dw </span></span>
 <span><span class="co">## 0.347  1.138 -0.536 -0.374 </span></span></code></pre></div>
 <p align="center">
-<img src="reference/figures/sku.jpg" alt="SKU" width="75%"></p>
+<img src="reference/figures/sku.jpg" alt="Figure 8: SKU" width="75%"></p>
 <p class="caption" align="center">
 <span id="fig-Figure8"></span>Figure 8: SKU
 </p>
@@ -411,7 +413,7 @@
 <span><span class="co">## 4: In rasterdiv::paRao(x = raster_data_3D, window = w, na.tolerance = 1,  :</span></span>
 <span><span class="co">##   Input data are float numbers. Converting data to integer matrices.</span></span></code></pre></div>
 <p align="center">
-<img src="reference/figures/rao.jpg" alt="RAO" width="75%"></p>
+<img src="reference/figures/rao.jpg" alt="Figure 9: RAO" width="75%"></p>
 <p class="caption" align="center">
 <span id="fig-Figure9"></span>Figure 9: RAO
 </p>
@@ -464,7 +466,7 @@
 <h2 data-toc-skip>Dev status</h2>
 <ul class="list-unstyled">
 <li><a href="https://CRAN.R-project.org/package=prior3D" class="external-link"><img src="https://www.r-pkg.org/badges/version/prior3D" alt="CRAN status"></a></li>
-<li><a href="https://CRAN.R-project.org/package=prior3D" class="external-link"><img src="https://img.shields.io/badge/devel%20version-0.1.1-blue.svg"></a></li>
+<li><a href="https://CRAN.R-project.org/package=prior3D" class="external-link"><img src="https://img.shields.io/badge/devel%20version-0.1.1-blue.svg" alt="CRAN version"></a></li>
 <li><a href="https://github.com/cadam00/prior3D/actions/workflows/R-CMD-check.yaml" class="external-link"><img src="https://github.com/cadam00/prior3D/actions/workflows/R-CMD-check.yaml/badge.svg" alt="R-CMD-check"></a></li>
 </ul>
 </div>

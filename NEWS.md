@@ -4,6 +4,8 @@
 
 - Update README.md badges and text.
 
+- Update DESCRIPTION text.
+
 - Use `rev(terrain.colors(255))` for plots.
 
 - Create pkgdown website.

@@ -2,9 +2,12 @@ Package: prior3D
 Type: Package
 Title: 3D Prioritization Algorithm
 Version: 0.1.1
-Authors@R: c(person("Christos", "Adam", role = c("aut", "cre"), email = "econp266@econ.soc.uoc.gr"),
+Authors@R: c(person("Aggeliki", "Doxa", role = "aut", email = "angedoxa@bio.auth.gr"),
+             person("Christos", "Adam", role = c("aut", "cre"), email = "econp266@econ.soc.uoc.gr"),
              person("Nikolaos", "Nagkoulis", role = "aut", email = "nikolaosn@civil.auth.gr"),
-             person("Aggeliki", "Doxa", role = "aut", email = "angedoxa@bio.auth.gr"))
+             person("Antonios", "Mazaris", role = "aut", email = "amazaris@bio.auth.gr"),
+             person("Stelios", "Katsanevakis", role = "aut", email = "stelios@katsanevakis.com")
+             )
 Maintainer: Christos Adam <econp266@econ.soc.uoc.gr>
 Description: 3D systematic conservation planning, conducting nested
              prioritization analyses across multiple depth levels and ensuring

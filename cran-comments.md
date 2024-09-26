@@ -1,20 +1,15 @@
-## Resubmission
+# prior3D 0.1.1
 
-This is a resubmission. In this version I have:
+## Minor changes
 
--   Corrected start of the description -\> Removed Toolset word.
+- Update README.md badges and text.
 
--   Added \value to coherence.Rd.
+- Update DESCRIPTION text.
 
--   Kept \dontrun{} only at the examples of coherence.Rd, Compare_2D_3D.Rd,
-evaluate_3D.Rd, plot_3D.Rd, plot_Compare_2D_3D.Rd, prioritize_3D.Rd. The reason
-is the use of commercial software required for running option
-`portfolio = "gap"`.
+- Use `rev(terrain.colors(255))` for plots.
 
--   Replaced `print()` with `message()` -> R/rfunctions.R.
+- Create pkgdown website.
 
 ## R CMD check results
 
-0 errors \| 0 warnings \| 1 note
-
--   This is a new release.
+0 errors \| 0 warnings \| 0 note

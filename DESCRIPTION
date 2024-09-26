@@ -9,13 +9,13 @@ Authors@R: c(person("Aggeliki", "Doxa", role = "aut", email = "angedoxa@bio.auth
              person("Stelios", "Katsanevakis", role = "aut", email = "stelios@katsanevakis.com")
              )
 Maintainer: Christos Adam <econp266@econ.soc.uoc.gr>
-Description: 3D systematic conservation planning, conducting nested
-             prioritization analyses across multiple depth levels and ensuring
-             efficient resource allocation throughout the water column (Doxa et
-             al. 2024 <doi:10.1111/gcb.16268>). It provides a structured
-             workflow designed to address biodiversity conservation and
-             management challenges in the 3 dimensions, while
-             facilitating users’ choices and parameterization. 
+Description: Three-dimensional systematic conservation planning, conducting
+             nested prioritization analyses across multiple depth levels and
+             ensuring efficient resource allocation throughout the water column
+             (Doxa et al. 2024 <doi:10.1111/gcb.16268>). It provides a
+             structured workflow designed to address biodiversity conservation
+             and management challenges in the 3 dimensions, while facilitating
+             users’ choices and parameterization. 
 License: GPL-3
 Encoding: UTF-8
 URL: https://github.com/cadam00/prior3D, https://cadam00.github.io/prior3D/

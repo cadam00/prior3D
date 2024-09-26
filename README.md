@@ -85,7 +85,7 @@ a post-processing analysis, which can be conducted after either the
 step-by-step or the comparative analysis. The necessary functions for
 this assessment are also provided within the package.
 
-## 3 Installation
+## 3 **Installation**
 
 All the functions of the package prior3D can be installed in R via:
 ``` r

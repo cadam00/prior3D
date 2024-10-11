@@ -1,3 +1,9 @@
+# prior3D 0.1.2
+
+## Minor changes
+
+- Make internal code a bit cleaner.
+
 # prior3D 0.1.1
 
 ## Minor changes

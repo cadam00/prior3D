@@ -2,7 +2,7 @@
 
 ## Minor changes
 
-- Make internal code a bit cleaner.
+- Make internal code and outputs cleaner.
 
 # prior3D 0.1.1
 

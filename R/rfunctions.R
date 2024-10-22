@@ -1158,6 +1158,7 @@ Compare_2D_3D <- function(biodiv_raster,
     names_features
 
   names(solution3D) <- names(solution2D) <-
+    names(absolute_held2D) <- names(absolute_held3D) <-
     rownames(overall_held3D) <- rownames(overall_held2D) <-
     names(mean_overall_helds3D) <- names(mean_overall_helds2D) <-
     names(jaccard_coef) <-
@@ -1189,6 +1190,7 @@ Compare_2D_3D <- function(biodiv_raster,
                             function(x, rev_depth_levels_names, names_features){
                               colnames(x) <- rev_depth_levels_names
                               rownames(x) <- names_features
+                              return(x)
                             },
   rev_depth_levels_names=rev_depth_levels_names,
   names_features = names_features)
@@ -1197,6 +1199,7 @@ Compare_2D_3D <- function(biodiv_raster,
                             function(x, rev_depth_levels_names, names_features){
                               colnames(x) <- rev_depth_levels_names
                               rownames(x) <- names_features
+                              return(x)
                             },
   rev_depth_levels_names=rev_depth_levels_names,
   names_features = names_features)
@@ -1493,6 +1496,7 @@ prioritize_3D <- function(split_features,
                             function(x, rev_depth_levels_names, names_features){
                               colnames(x) <- rev_depth_levels_names
                               rownames(x) <- names_features
+                              return(x)
                             },
   rev_depth_levels_names=rev_depth_levels_names,
   names_features = names_features)

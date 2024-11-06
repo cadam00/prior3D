@@ -11,8 +11,8 @@
 <script src="deps/bootstrap-5.3.1/bootstrap.bundle.min.js"></script><link href="deps/font-awesome-6.4.2/css/all.min.css" rel="stylesheet">
 <link href="deps/font-awesome-6.4.2/css/v4-shims.min.css" rel="stylesheet">
 <script src="deps/headroom-0.11.0/headroom.min.js"></script><script src="deps/headroom-0.11.0/jQuery.headroom.min.js"></script><script src="deps/bootstrap-toc-1.0.1/bootstrap-toc.min.js"></script><script src="deps/clipboard.js-2.0.11/clipboard.min.js"></script><script src="deps/search-1.0.0/autocomplete.jquery.min.js"></script><script src="deps/search-1.0.0/fuse.min.js"></script><script src="deps/search-1.0.0/mark.min.js"></script><!-- pkgdown --><script src="pkgdown.js"></script><meta property="og:title" content="3D Prioritization Algorithm">
-<meta name="description" content="Three-dimensional systematic conservation planning, conducting nested prioritization analyses across multiple depth levels and ensuring efficient resource allocation throughout the water column (Doxa et al. 2024 &lt;doi:10.1111/gcb.16268&gt;). It provides a structured workflow designed to address biodiversity conservation and management challenges in the 3 dimensions, while facilitating users’ choices and parameterization.">
-<meta property="og:description" content="Three-dimensional systematic conservation planning, conducting nested prioritization analyses across multiple depth levels and ensuring efficient resource allocation throughout the water column (Doxa et al. 2024 &lt;doi:10.1111/gcb.16268&gt;). It provides a structured workflow designed to address biodiversity conservation and management challenges in the 3 dimensions, while facilitating users’ choices and parameterization.">
+<meta name="description" content="Three-dimensional systematic conservation planning, conducting nested prioritization analyses across multiple depth levels and ensuring efficient resource allocation throughout the water column. It provides a structured workflow designed to address biodiversity conservation and management challenges in the 3 dimensions, while facilitating users’ choices and parameterization (Doxa et al. 2024 &lt;doi:10.1016/j.ecolmodel.2024.110919&gt;).">
+<meta property="og:description" content="Three-dimensional systematic conservation planning, conducting nested prioritization analyses across multiple depth levels and ensuring efficient resource allocation throughout the water column. It provides a structured workflow designed to address biodiversity conservation and management challenges in the 3 dimensions, while facilitating users’ choices and parameterization (Doxa et al. 2024 &lt;doi:10.1016/j.ecolmodel.2024.110919&gt;).">
 </head>
 <body>
     <a href="#main" class="visually-hidden-focusable">Skip to contents</a>
@@ -45,7 +45,7 @@
 </nav><div class="container template-home">
 <div class="row">
   <main id="main" class="col-md-9">
-<p><strong>This work was conducted at the Department of Marine Sciences, University of the Aegean, Greece, supported by the European Union’s Horizon 2020 research and innovation programme HORIZON-CL6–2021-BIODIV-01–12 under grant agreement No 101059407, “MarinePlan – Improved transdisciplinary science for effective ecosystem-based maritime spatial planning and conservation in European Seas”.</strong></p>
+<p><strong>This research was conducted at the Department of Marine Sciences, University of the Aegean, Greece, supported by the European Union’s Horizon 2020 research and innovation programme HORIZON-CL6–2021-BIODIV-01–12, under grant agreement No 101059407, “MarinePlan – Improved transdisciplinary science for effective ecosystem-based maritime spatial planning and conservation in European Seas”.</strong></p>
 <div class="section level2">
 <h2 id="id_1-introduction-to-the-prior3d-package-tutorial">1 <strong>Introduction to the prior3D Package (tutorial)</strong>
 <a class="anchor" aria-label="anchor" href="#id_1-introduction-to-the-prior3d-package-tutorial"></a>
@@ -91,8 +91,16 @@
 <span><span class="fu">remotes</span><span class="fu">::</span><span class="fu">install_github</span><span class="op">(</span><span class="st">"cadam00/prior3D"</span><span class="op">)</span></span></code></pre></div>
 </div>
 <div class="section level2">
-<h2 id="id_4-illustration-example">4 <strong>Illustration example</strong>
-<a class="anchor" aria-label="anchor" href="#id_4-illustration-example"></a>
+<h2 id="id_4-citation">4 <strong>Citation</strong>
+<a class="anchor" aria-label="anchor" href="#id_4-citation"></a>
+</h2>
+<blockquote>
+<p>Doxa A, Adam C, Nagkoulis N, Mazaris AD, Katsanevakis S, 2024. prior3D: An R package for three-dimensional conservation prioritization. Ecological Modelling <b>499</b>: 110919. <a href="https://doi.org/10.1016/j.ecolmodel.2024.110919" class="external-link uri">https://doi.org/10.1016/j.ecolmodel.2024.110919</a></p>
+</blockquote>
+</div>
+<div class="section level2">
+<h2 id="id_5-illustration-example">5 <strong>Illustration example</strong>
+<a class="anchor" aria-label="anchor" href="#id_5-illustration-example"></a>
 </h2>
 <p>Let us consider the following dataset as an illustrative example. It represents a subset of the species analyzed in Doxa et al. (<a href="#ref-doxa20224d">2022</a>). For simplicity reasons, we have included only 20 species for demonstration purposes.</p>
 <p><strong>Biodiversity features</strong></p>
@@ -154,12 +162,12 @@
 <span><span class="co">## max value   :     -6.60191</span></span></code></pre></div>
 </div>
 <div class="section level2">
-<h2 id="id_5-step-by-step-3d-scp-analysis">5 <strong>Step-by-Step 3D SCP analysis</strong>
-<a class="anchor" aria-label="anchor" href="#id_5-step-by-step-3d-scp-analysis"></a>
+<h2 id="id_6-step-by-step-3d-scp-analysis">6 <strong>Step-by-Step 3D SCP analysis</strong>
+<a class="anchor" aria-label="anchor" href="#id_6-step-by-step-3d-scp-analysis"></a>
 </h2>
 <div class="section level3">
-<h3 id="id_51-step-1-data-preparation">5.1 <strong>Step 1: Data Preparation</strong>
-<a class="anchor" aria-label="anchor" href="#id_51-step-1-data-preparation"></a>
+<h3 id="id_61-step-1-data-preparation">6.1 <strong>Step 1: Data Preparation</strong>
+<a class="anchor" aria-label="anchor" href="#id_61-step-1-data-preparation"></a>
 </h3>
 <p><strong>Transforming Biodiversity Distributions into Multilevel (3D) Data</strong></p>
 <p>The <code><a href="reference/split_rast.html">split_rast()</a></code> function is used to convert 2D distributions of biodiversity features (rasters) into a 3D format.</p>
@@ -173,8 +181,8 @@
 <p>The output is a list containing species distributions for each bathymetric layer, necessary for the analysis next steps.</p>
 </div>
 <div class="section level3">
-<h3 id="id_52-step-2-3d-prioritization-algorithm">5.2 <strong>Step 2: 3D Prioritization Algorithm</strong>
-<a class="anchor" aria-label="anchor" href="#id_52-step-2-3d-prioritization-algorithm"></a>
+<h3 id="id_62-step-2-3d-prioritization-algorithm">6.2 <strong>Step 2: 3D Prioritization Algorithm</strong>
+<a class="anchor" aria-label="anchor" href="#id_62-step-2-3d-prioritization-algorithm"></a>
 </h3>
 <p>The 3D prioritization algorithm is implemented using the <code><a href="reference/prioritize_3D.html">prioritize_3D()</a></code> function, the core function of the <strong>prior3D</strong> package. This function uses the list generated from the <code><a href="reference/split_rast.html">split_rast()</a></code> function and other necessary inputs.</p>
 <div class="sourceCode" id="cb10"><pre class="downlit sourceCode r">
@@ -188,7 +196,7 @@
 <span>                           portfolio       <span class="op">=</span> <span class="st">"gap"</span>, <span class="co">#"shuffle"</span></span>
 <span>                           portfolio_opts  <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span>number_solutions <span class="op">=</span> <span class="fl">10</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
 <div class="sourceCode" id="cb11"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="co">## [1] "Budget: 0.3"</span></span></code></pre></div>
+<code class="sourceCode R"><span><span class="co">## Budget: 0.3</span></span></code></pre></div>
 <p><u>Notes:</u></p>
 <p><code>budget_percent</code>: Contrarily to its strict economic definition, budget reflects the desired level of protection to be modeled. It ranges from 0 to 1, with 0 indicating no resources available for protection, while 1 signifies resources sufficient to protect the entire study area. Typically, setting a budget of 0.3 corresponds to the 30% conservation target (i.e. 30% of the total area set aside for conservation). Users also have the flexibility to define multiple budget levels using a vector, allowing for the exploration of various protection scenarios. For instance, a vector like <code>c(0.1, 0.3, 0.5)</code> represents three scenarios where 10%, 30%, and 50% of the study area are designated for protection.</p>
 <p><code>budget_weights</code>: The <code><a href="reference/prioritize_3D.html">prioritize_3D()</a></code> function allows users to specify how the budget is distributed among depth levels. Three allocation methods are available:</p>
@@ -199,8 +207,8 @@
 </ol>
 </div>
 <div class="section level3">
-<h3 id="id_53-step-3-generating-outputs">5.3 <strong>Step 3: Generating Outputs</strong>
-<a class="anchor" aria-label="anchor" href="#id_53-step-3-generating-outputs"></a>
+<h3 id="id_63-step-3-generating-outputs">6.3 <strong>Step 3: Generating Outputs</strong>
+<a class="anchor" aria-label="anchor" href="#id_63-step-3-generating-outputs"></a>
 </h3>
 <p><strong>Prioritization Maps</strong></p>
 <p>The <code><a href="reference/prioritize_3D.html">prioritize_3D()</a></code> function is used to generate prioritization maps. Single budget settings (ex. <code>total_budget=0.3</code>) produce standard maps, as typical Marxan outputs. Multiple budgets, by using a vector (ex. <code>c(0.1,0.3,0.5)</code>, indicating available resources sufficient to protect 10%, 30% and 50% of the area) result in cumulative maps, illustrating areas selected by various budget levels. Although this output follows a different approach, it resembles to typical Zonation output maps.</p>
@@ -220,7 +228,7 @@
 <p>And for multiple budgets</p>
 <div class="sourceCode" id="cb13"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># Create plot of outputs for multiple budget percentages</span></span>
-<span><span class="va">multuple_3D</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/prioritize_3D.html">prioritize_3D</a></span><span class="op">(</span>split_features  <span class="op">=</span> <span class="va">split_features</span>,</span>
+<span><span class="va">multiple_3D</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/prioritize_3D.html">prioritize_3D</a></span><span class="op">(</span>split_features  <span class="op">=</span> <span class="va">split_features</span>,</span>
 <span>                             depth_raster    <span class="op">=</span> <span class="va">depth_raster</span>,</span>
 <span>                             breaks          <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">0</span>, <span class="op">-</span><span class="fl">40</span>, <span class="op">-</span><span class="fl">200</span>, <span class="op">-</span><span class="fl">2000</span>, <span class="op">-</span><span class="cn">Inf</span><span class="op">)</span>,</span>
 <span>                             biodiv_df       <span class="op">=</span> <span class="va">biodiv_df</span>,</span>
@@ -230,21 +238,21 @@
 <span>                             portfolio       <span class="op">=</span> <span class="st">"gap"</span>,</span>
 <span>                             portfolio_opts  <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span>number_solutions <span class="op">=</span> <span class="fl">10</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
 <div class="sourceCode" id="cb14"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="co">## [1] "Budget: 0"</span></span>
+<code class="sourceCode R"><span><span class="co">## Budget: 0</span></span>
 <span><span class="co">## Warning: Portfolio could only find 1 out of 10 solutions.</span></span>
 <span><span class="co">## Warning: Portfolio could only find 1 out of 10 solutions.</span></span>
 <span><span class="co">## Warning: Portfolio could only find 1 out of 10 solutions.</span></span>
 <span><span class="co">## Warning: Portfolio could only find 1 out of 10 solutions.</span></span>
-<span><span class="co">## [1] "Budget: 0.1"</span></span>
-<span><span class="co">## [1] "Budget: 0.2"</span></span>
-<span><span class="co">## [1] "Budget: 0.3"</span></span>
-<span><span class="co">## [1] "Budget: 0.4"</span></span>
-<span><span class="co">## [1] "Budget: 0.5"</span></span>
-<span><span class="co">## [1] "Budget: 0.6"</span></span>
-<span><span class="co">## [1] "Budget: 0.7"</span></span>
-<span><span class="co">## [1] "Budget: 0.8"</span></span>
-<span><span class="co">## [1] "Budget: 0.9"</span></span>
-<span><span class="co">## [1] "Budget: 1"</span></span>
+<span><span class="co">## Budget: 0.1</span></span>
+<span><span class="co">## Budget: 0.2</span></span>
+<span><span class="co">## Budget: 0.3</span></span>
+<span><span class="co">## Budget: 0.4</span></span>
+<span><span class="co">## Budget: 0.5</span></span>
+<span><span class="co">## Budget: 0.6</span></span>
+<span><span class="co">## Budget: 0.7</span></span>
+<span><span class="co">## Budget: 0.8</span></span>
+<span><span class="co">## Budget: 0.9</span></span>
+<span><span class="co">## Budget: 1</span></span>
 <span><span class="co">## Warning: Problem failed presolve checks.</span></span>
 <span><span class="co">## </span></span>
 <span><span class="co">## These checks indicate that solutions might not identify meaningful priority</span></span>
@@ -255,7 +263,7 @@
 <span><span class="co">## </span></span>
 <span><span class="co">## ℹ For more information, see `presolve_check()`.</span></span></code></pre></div>
 <div class="sourceCode" id="cb15"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu"><a href="reference/plot_3D.html">plot_3D</a></span><span class="op">(</span><span class="va">multuple_3D</span><span class="op">)</span></span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu"><a href="reference/plot_3D.html">plot_3D</a></span><span class="op">(</span><span class="va">multiple_3D</span><span class="op">)</span></span></code></pre></div>
 <p align="center">
 <img src="reference/figures/fig5.jpg" alt="Figure 5: Output for multiple budget percentages" width="75%"></p>
 <p class="caption" align="center">
@@ -264,22 +272,57 @@
 </div>
 </div>
 <div class="section level2">
-<h2 id="id_6-comparative-analysis-of-a-2d-and-a-3d-scp-approach">6 <strong>Comparative Analysis of a 2D and a 3D SCP approach</strong>
-<a class="anchor" aria-label="anchor" href="#id_6-comparative-analysis-of-a-2d-and-a-3d-scp-approach"></a>
+<h2 id="id_7-comparative-analysis-of-a-2d-and-a-3d-scp-approach">7 <strong>Comparative Analysis of a 2D and a 3D SCP approach</strong>
+<a class="anchor" aria-label="anchor" href="#id_7-comparative-analysis-of-a-2d-and-a-3d-scp-approach"></a>
 </h2>
 <p>To facilitate comparisons between 3D and 2D approaches, the <code>compare_2D_3D()</code> function is provided in the package. This function enables users to conduct all the above mentioned steps of analysis (data generation, setting and solving the optimization problem and producing outputs), by executing both 2D and 3D approaches, with similar settings, that facilitate comparisons. The function <code><a href="reference/plot_Compare_2D_3D.html">plot_Compare_2D_3D()</a></code> generates corresponding maps and graphs for both approaches.</p>
 <div class="sourceCode" id="cb16"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">out_2D_3D</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/Compare_2D_3D.html">Compare_2D_3D</a></span><span class="op">(</span>biodiv_raster <span class="op">=</span> <span class="va">biodiv_raster</span>,</span>
-<span>                           depth_raster <span class="op">=</span> <span class="va">depth_raster</span>,</span>
-<span>                           breaks <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">0</span>, <span class="op">-</span><span class="fl">40</span>, <span class="op">-</span><span class="fl">200</span>, <span class="op">-</span><span class="fl">2000</span>, <span class="op">-</span><span class="cn">Inf</span><span class="op">)</span>,</span>
-<span>                           biodiv_df <span class="op">=</span> <span class="va">biodiv_df</span>,</span>
+<code class="sourceCode R"><span><span class="va">out_2D_3D</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/Compare_2D_3D.html">Compare_2D_3D</a></span><span class="op">(</span>biodiv_raster   <span class="op">=</span> <span class="va">biodiv_raster</span>,</span>
+<span>                           depth_raster    <span class="op">=</span> <span class="va">depth_raster</span>,</span>
+<span>                           breaks          <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">0</span>, <span class="op">-</span><span class="fl">40</span>, <span class="op">-</span><span class="fl">200</span>, <span class="op">-</span><span class="fl">2000</span>, <span class="op">-</span><span class="cn">Inf</span><span class="op">)</span>,</span>
+<span>                           biodiv_df       <span class="op">=</span> <span class="va">biodiv_df</span>,</span>
 <span>                           budget_percents <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/seq.html" class="external-link">seq</a></span><span class="op">(</span><span class="fl">0</span>, <span class="fl">1</span>, <span class="fl">0.1</span><span class="op">)</span>,</span>
-<span>                           budget_weights <span class="op">=</span> <span class="st">"richness"</span>,</span>
-<span>                           threads <span class="op">=</span> <span class="fu">parallel</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/r/parallel/detectCores.html" class="external-link">detectCores</a></span><span class="op">(</span><span class="op">)</span>,</span>
-<span>                           portfolio <span class="op">=</span> <span class="st">"gap"</span>, <span class="co">#"shuffle"</span></span>
-<span>                           portfolio_opts <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span>number_solutions <span class="op">=</span> <span class="fl">10</span><span class="op">)</span><span class="op">)</span></span>
-<span></span>
-<span><span class="fu"><a href="reference/plot_Compare_2D_3D.html">plot_Compare_2D_3D</a></span><span class="op">(</span><span class="va">out_2D_3D</span>, to_plot<span class="op">=</span><span class="st">"all"</span>, add_lines<span class="op">=</span><span class="cn">TRUE</span><span class="op">)</span></span></code></pre></div>
+<span>                           budget_weights  <span class="op">=</span> <span class="st">"richness"</span>,</span>
+<span>                           threads         <span class="op">=</span> <span class="fu">parallel</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/r/parallel/detectCores.html" class="external-link">detectCores</a></span><span class="op">(</span><span class="op">)</span>,</span>
+<span>                           portfolio       <span class="op">=</span> <span class="st">"gap"</span>, <span class="co">#"shuffle"</span></span>
+<span>                           portfolio_opts  <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span>number_solutions <span class="op">=</span> <span class="fl">10</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
+<div class="sourceCode" id="cb17"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="co">## Budget: 0</span></span>
+<span><span class="co">## Warning: Portfolio could only find 1 out of 10 solutions.</span></span>
+<span><span class="co">## Warning: Portfolio could only find 1 out of 10 solutions.</span></span>
+<span><span class="co">## Warning: Portfolio could only find 1 out of 10 solutions.</span></span>
+<span><span class="co">## Warning: Portfolio could only find 1 out of 10 solutions.</span></span>
+<span><span class="co">## Warning: Portfolio could only find 1 out of 10 solutions.</span></span>
+<span><span class="co">## Budget: 0.1</span></span>
+<span><span class="co">## Budget: 0.2</span></span>
+<span><span class="co">## Budget: 0.3</span></span>
+<span><span class="co">## Budget: 0.4</span></span>
+<span><span class="co">## Budget: 0.5</span></span>
+<span><span class="co">## Budget: 0.6</span></span>
+<span><span class="co">## Budget: 0.7</span></span>
+<span><span class="co">## Budget: 0.8</span></span>
+<span><span class="co">## Budget: 0.9</span></span>
+<span><span class="co">## Budget: 1</span></span>
+<span><span class="co">## Warning: Problem failed presolve checks.</span></span>
+<span><span class="co">## </span></span>
+<span><span class="co">## These checks indicate that solutions might not identify meaningful priority</span></span>
+<span><span class="co">## areas:</span></span>
+<span><span class="co">## </span></span>
+<span><span class="co">## ✖ Budget is greater than the total cost of selecting all planning units.</span></span>
+<span><span class="co">## → Maybe you made a mistake when setting the `budget` in the objective function?</span></span>
+<span><span class="co">## </span></span>
+<span><span class="co">## ℹ For more information, see `presolve_check()`.</span></span>
+<span><span class="co">## Warning: Problem failed presolve checks.</span></span>
+<span><span class="co">## </span></span>
+<span><span class="co">## These checks indicate that solutions might not identify meaningful priority</span></span>
+<span><span class="co">## areas:</span></span>
+<span><span class="co">## </span></span>
+<span><span class="co">## ✖ Budget is greater than the total cost of selecting all planning units.</span></span>
+<span><span class="co">## → Maybe you made a mistake when setting the `budget` in the objective function?</span></span>
+<span><span class="co">## </span></span>
+<span><span class="co">## ℹ For more information, see `presolve_check()`.</span></span></code></pre></div>
+<div class="sourceCode" id="cb18"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="reference/plot_Compare_2D_3D.html">plot_Compare_2D_3D</a></span><span class="op">(</span><span class="va">out_2D_3D</span>, to_plot<span class="op">=</span><span class="st">"all"</span>, add_lines<span class="op">=</span><span class="cn">TRUE</span><span class="op">)</span></span></code></pre></div>
 <p align="center">
 <img src="reference/figures/fig6.jpg" alt="Figure 6: Comparison of 2D vs 3D approach for multiple budget
   percentages" width="75%"></p>
@@ -288,15 +331,15 @@
 </p>
 </div>
 <div class="section level2">
-<h2 id="id_7-spatial-coherence-metrics">7 <strong>Spatial Coherence Metrics</strong>
-<a class="anchor" aria-label="anchor" href="#id_7-spatial-coherence-metrics"></a>
+<h2 id="id_8-spatial-coherence-metrics">8 <strong>Spatial Coherence Metrics</strong>
+<a class="anchor" aria-label="anchor" href="#id_8-spatial-coherence-metrics"></a>
 </h2>
 <p>The spatial coherence of the prioritization output (optimization solution) maps is assessed using three metrics: average surface roughness (SA), surface kurtosis (SKU), and the RAO index. These can be used for comparison among solution 2D and 3D solutions.</p>
 <p>High SA values signify that there is a high spatial heterogeneity, indicating lower spatial coherence. High SKU indicate high spatial coherence. Both SA and SKU are calculated using R package <strong>geodiv</strong> (<a href="#ref-geodiv">Smith et al. 2023</a>), applying <code><a href="https://rdrr.io/pkg/geodiv/man/focal_metrics.html" class="external-link">geodiv::focal_metrics</a></code> functions “sa” and “sku” to optimization solution rasters.</p>
 <p>High RAO values suggest increased spatial heterogeneity, thus low spatial coherence. To compute the RAO metric, a moving window approach is employed on optimization solution maps, using function <code><a href="https://mattmar.github.io/rasterdiv/reference/paRao.html" class="external-link">rasterdiv::paRao</a></code> from R package <strong>rasterdiv</strong> (<a href="#ref-rasterdiv">Rocchini, Thouverai, et al. 2021</a>; <a href="#ref-rasterdivpaper">Rocchini, Marcantonio, et al. 2021</a>). The dimensions of the window chosen is 3×3. The new raster, which is a result of the application of the algorithm, is used to get an average RAO value for the whole raster.</p>
-<div class="sourceCode" id="cb17"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb19"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="reference/coherence.html">coherence</a></span><span class="op">(</span><span class="va">out_2D_3D</span>, w<span class="op">=</span><span class="fl">3</span><span class="op">)</span></span></code></pre></div>
-<div class="sourceCode" id="cb18"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb20"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co">## Progress metrics:  1 / 1</span></span>
 <span><span class="co">## Progress metrics:  1 / 1</span></span>
 <span><span class="co">##  sa2D  sa3D sa2Dw sa3Dw </span></span>
@@ -306,9 +349,9 @@
 <p class="caption" align="center">
 <span id="fig-Figure7"></span>Figure 7: SA
 </p>
-<div class="sourceCode" id="cb19"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb21"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="reference/coherence.html">coherence</a></span><span class="op">(</span><span class="va">out_2D_3D</span>, w<span class="op">=</span><span class="fl">3</span>, metric<span class="op">=</span><span class="st">"sku"</span><span class="op">)</span></span></code></pre></div>
-<div class="sourceCode" id="cb20"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb22"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co">## Progress metrics:  1 / 1</span></span>
 <span><span class="co">## Progress metrics:  1 / 1</span></span>
 <span><span class="co">## sku2D  sku3D sku2Dw sku3Dw </span></span>
@@ -318,10 +361,10 @@
 <p class="caption" align="center">
 <span id="fig-Figure8"></span>Figure 8: SKU
 </p>
-<div class="sourceCode" id="cb21"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb23"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="reference/coherence.html">coherence</a></span><span class="op">(</span><span class="va">out_2D_3D</span>, w<span class="op">=</span><span class="fl">3</span>, metric<span class="op">=</span><span class="st">"rao"</span><span class="op">)</span></span></code></pre></div>
-<div class="sourceCode" id="cb22"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="co">## [1] "2D RAO"</span></span>
+<div class="sourceCode" id="cb24"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="co">## 2D RAO</span></span>
 <span><span class="co">## </span></span>
 <span><span class="co">## </span></span>
 <span><span class="co">## Processing alpha: 1 Moving Window: 3</span></span>
@@ -361,7 +404,7 @@
 <span><span class="co">## [===========================================&gt;-]  99% in  0s</span></span>
 <span><span class="co">## [=============================================] 100% in  0s</span></span>
 <span><span class="co">## </span></span>
-<span><span class="co">## [1] "3D RAO"</span></span>
+<span><span class="co">## 3D RAO</span></span>
 <span><span class="co">## </span></span>
 <span><span class="co">## </span></span>
 <span><span class="co">## Processing alpha: 1 Moving Window: 3</span></span>
@@ -420,8 +463,8 @@
 </p>
 </div>
 <div class="section level2">
-<h2 id="id_8-references">8 <strong>References</strong>
-<a class="anchor" aria-label="anchor" href="#id_8-references"></a>
+<h2 id="id_9-references">9 <strong>References</strong>
+<a class="anchor" aria-label="anchor" href="#id_9-references"></a>
 </h2>
 <p>Doxa, Aggeliki, Vasiliki Almpanidou, Stelios Katsanevakis, Ana M Queirós, Kristin Kaschner, Cristina Garilao, Kathleen Kesner-Reyes, and Antonios D Mazaris. 2022. “<span id="ref-doxa20224d" class="nocase">4D marine conservation networks: Combining 3D prioritization of present and future biodiversity with climatic refugia</span>.” <em>Global Change Biology</em> 28 (15): 4577–88. <a href="https://doi.org/10.1111/gcb.16268" class="external-link uri">https://doi.org/10.1111/gcb.16268</a>.</p>
 <p>Hanson, Jeffrey O, Richard Schuster, Nina Morrell, Matthew Strimas-Mackey, Brandon P M Edwards, Matthew E Watts, Peter Arcese, Joseph Bennett, and Hugh P Possingham. 2024. <em><span id="ref-prioritizr" class="nocase">prioritizr: Systematic Conservation Prioritization in R</span></em>. <a href="https://prioritizr.net" class="external-link uri">https://prioritizr.net</a>.</p>
@@ -457,11 +500,11 @@
 <div class="developers">
 <h2 data-toc-skip>Developers</h2>
 <ul class="list-unstyled">
-<li>Aggeliki Doxa <br><small class="roles"> Author </small>  </li>
+<li>Aggeliki Doxa <br><small class="roles"> Author </small> <a href="https://orcid.org/0000-0003-4279-1499" target="orcid.widget" aria-label="ORCID" class="external-link"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
 <li>Christos Adam <br><small class="roles"> Author, maintainer </small>  </li>
-<li>Nikolaos Nagkoulis <br><small class="roles"> Author </small>  </li>
-<li>Antonios Mazaris <br><small class="roles"> Author </small>  </li>
-<li>Stelios Katsanevakis <br><small class="roles"> Author </small>  </li>
+<li>Nikolaos Nagkoulis <br><small class="roles"> Author </small> <a href="https://orcid.org/0000-0002-1900-2634" target="orcid.widget" aria-label="ORCID" class="external-link"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
+<li>D. Antonios Mazaris <br><small class="roles"> Author </small> <a href="https://orcid.org/0000-0002-4961-5490" target="orcid.widget" aria-label="ORCID" class="external-link"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
+<li>Stelios Katsanevakis <br><small class="roles"> Author </small> <a href="https://orcid.org/0000-0002-5137-7540" target="orcid.widget" aria-label="ORCID" class="external-link"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
 </ul>
 </div>
 
@@ -479,7 +522,7 @@
 
 
     <footer><div class="pkgdown-footer-left">
-  <p>Developed by Aggeliki Doxa, Christos Adam, Nikolaos Nagkoulis, Antonios Mazaris, Stelios Katsanevakis.</p>
+  <p>Developed by Aggeliki Doxa, Christos Adam, Nikolaos Nagkoulis, D. Antonios Mazaris, Stelios Katsanevakis.</p>
 </div>
 
 <div class="pkgdown-footer-right">

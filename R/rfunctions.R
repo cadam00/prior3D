@@ -1071,7 +1071,8 @@ Compare_2D_3D <- function(biodiv_raster,
   }
   pu_rast <- terra::mask(pu_rast, depth_raster)
   length_budget_percents <- length(budget_percents)
-  absolute_held3D <- absolute_held2D <- NULL
+  absolute_held3D <- absolute_held2D <-
+    overall_available2D <- overall_available3D <- NULL
   relative_helds3D <- relative_helds2D <- depth_overall_available3D <-
     depth_overall_available2D <-
     matrix(nrow=length_budget_percents, ncol=n_depths)
@@ -1103,6 +1104,7 @@ Compare_2D_3D <- function(biodiv_raster,
     bar3D <- evaluate_3D(solution3D[[i]], rev_split_features)
     relative_helds3D[i,] <- bar3D$relative_held
     absolute_held3D[[i]] <- bar3D$absolute_held
+    overall_available3D[[i]] <- bar3D$overall_available
     overall_held3D[i,] <- bar3D$overall_held
     mean_overall_helds3D[i] <- mean(bar3D$overall_held, na.rm=TRUE)
     sd_overall_helds3D[i] <- sd(bar3D$overall_held, na.rm=TRUE)
@@ -1126,6 +1128,7 @@ Compare_2D_3D <- function(biodiv_raster,
     bar2D <- evaluate_3D(solution2D[[i]], rev_split_features)
     relative_helds2D[i,] <- bar2D$relative_held
     absolute_held2D[[i]] <- bar2D$absolute_held
+    overall_available2D[[i]] <- bar2D$overall_available
     overall_held2D[i,] <- bar2D$overall_held
     mean_overall_helds2D[i] <- mean(bar2D$overall_held, na.rm=TRUE)
     sd_overall_helds2D[i] <- sd(bar2D$overall_held, na.rm=TRUE)
@@ -1144,7 +1147,8 @@ Compare_2D_3D <- function(biodiv_raster,
   relative_helds3D <- relative_helds3D[,n_depths:1]
   absolute_held2D <- lapply(absolute_held2D, function(x)x[,n_depths:1])
   absolute_held3D <- lapply(absolute_held3D, function(x)x[,n_depths:1])
-
+  overall_available2D <- lapply(overall_available2D, function(x)x[,n_depths:1])
+  overall_available3D <- lapply(overall_available3D, function(x)x[,n_depths:1])
   total_amount <- bar3D$total_amount[,n_depths:1]
   overall_total_amount <- base::rowSums(total_amount, na.rm=TRUE)
 
@@ -1159,6 +1163,7 @@ Compare_2D_3D <- function(biodiv_raster,
 
   names(solution3D) <- names(solution2D) <-
     names(absolute_held2D) <- names(absolute_held3D) <-
+    names(overall_available2D) <- names(overall_available3D) <-
     rownames(overall_held3D) <- rownames(overall_held2D) <-
     names(mean_overall_helds3D) <- names(mean_overall_helds2D) <-
     names(jaccard_coef) <-
@@ -1204,11 +1209,29 @@ Compare_2D_3D <- function(biodiv_raster,
   rev_depth_levels_names=rev_depth_levels_names,
   names_features = names_features)
 
+  overall_available2D <- lapply(overall_available2D,
+                            function(x, rev_depth_levels_names, names_features){
+                              colnames(x) <- rev_depth_levels_names
+                              rownames(x) <- names_features
+                              return(x)
+                            },
+                            rev_depth_levels_names=rev_depth_levels_names,
+                            names_features = names_features)
+
+  overall_available3D <- lapply(overall_available3D,
+                            function(x, rev_depth_levels_names, names_features){
+                              colnames(x) <- rev_depth_levels_names
+                              rownames(x) <- names_features
+                              return(x)
+                            },
+                            rev_depth_levels_names=rev_depth_levels_names,
+                            names_features = names_features)
 
   output <- list(
     split_features=split_features,
     solution3D=solution3D,
     absolute_held3D=absolute_held3D,
+    overall_available3D=overall_available3D,
     overall_held3D=overall_held3D,
     relative_helds3D=relative_helds3D,
     mean_overall_helds3D=mean_overall_helds3D,
@@ -1216,6 +1239,7 @@ Compare_2D_3D <- function(biodiv_raster,
     depth_overall_available3D = depth_overall_available3D,
     solution2D=solution2D,
     absolute_held2D=absolute_held2D,
+    overall_available2D=overall_available2D,
     overall_held2D=overall_held2D,
     relative_helds2D=relative_helds2D,
     mean_overall_helds2D=mean_overall_helds2D,
@@ -1414,7 +1438,7 @@ prioritize_3D <- function(split_features,
   }
   pu_rast <- terra::mask(pu_rast, depth_raster)
   length_budget_percents <- length(budget_percents)
-  absolute_held3D <- NULL
+  absolute_held3D <- overall_available3D <- NULL
   relative_helds3D <- depth_overall_available3D <-
     matrix(nrow=length_budget_percents, ncol=n_depths)
   mean_overall_helds3D <- sd_overall_helds3D <- numeric(length_budget_percents)
@@ -1443,6 +1467,7 @@ prioritize_3D <- function(split_features,
     bar3D <- evaluate_3D(solution3D[[i]], rev_split_features)
     relative_helds3D[i,] <- bar3D$relative_held
     absolute_held3D[[i]] <- bar3D$absolute_held
+    overall_available3D[[i]] <- bar3D$overall_available
     overall_held3D[i,] <- bar3D$overall_held
     mean_overall_helds3D[i] <- mean(bar3D$overall_held, na.rm=TRUE)
     sd_overall_helds3D[i] <- sd(bar3D$overall_held, na.rm=TRUE)
@@ -1454,6 +1479,7 @@ prioritize_3D <- function(split_features,
   depth_overall_available3D <- depth_overall_available3D[,n_depths:1]
   relative_helds3D <- relative_helds3D[,n_depths:1]
   absolute_held3D <- lapply(absolute_held3D, function(x)x[,n_depths:1])
+  overall_available3D <- lapply(overall_available3D, function(x)x[,n_depths:1])
 
   total_amount <- bar3D$total_amount[,n_depths:1]
   overall_total_amount <- base::rowSums(total_amount, na.rm=TRUE)
@@ -1501,11 +1527,20 @@ prioritize_3D <- function(split_features,
   rev_depth_levels_names=rev_depth_levels_names,
   names_features = names_features)
 
+  overall_available3D <- lapply(overall_available3D,
+                            function(x, rev_depth_levels_names, names_features){
+                              colnames(x) <- rev_depth_levels_names
+                              rownames(x) <- names_features
+                              return(x)
+                            },
+                            rev_depth_levels_names=rev_depth_levels_names,
+                            names_features = names_features)
 
   output <- list(
     split_features=split_features,
     solution3D=solution3D,
     absolute_held3D=absolute_held3D,
+    overall_available3D=overall_available3D,
     overall_held3D=overall_held3D,
     relative_helds3D=relative_helds3D,
     mean_overall_helds3D=mean_overall_helds3D,

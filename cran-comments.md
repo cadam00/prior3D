@@ -1,4 +1,4 @@
-# prior3D 0.1.2-1
+# prior3D 0.1.3
 
 ## Minor changes
 

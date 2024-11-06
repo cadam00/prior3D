@@ -1,0 +1,386 @@
+# --------------------------------------------
+# CITATION file created with {cffr} R package
+# See also: https://docs.ropensci.org/cffr/
+# --------------------------------------------
+ 
+cff-version: 1.2.0
+message: 'To cite package "prior3D" in publications use:'
+type: software
+license: GPL-3.0-only
+title: 'prior3D: 3D Prioritization Algorithm'
+version: 0.1.2
+doi: 10.1016/j.ecolmodel.2024.110919
+identifiers:
+- type: doi
+  value: 10.32614/CRAN.package.prior3D
+abstract: Three-dimensional systematic conservation planning, conducting nested prioritization
+  analyses across multiple depth levels and ensuring efficient resource allocation
+  throughout the water column. It provides a structured workflow designed to address
+  biodiversity conservation and management challenges in the 3 dimensions, while facilitating
+  users’ choices and parameterization (Doxa et al. 2024 <https://doi.org/10.1016/j.ecolmodel.2024.110919>).
+authors:
+- family-names: Doxa
+  given-names: Aggeliki
+  email: aggeliki.doxa@uoc.gr
+  orcid: https://orcid.org/0000-0003-4279-1499
+- family-names: Adam
+  given-names: Christos
+  email: econp266@econ.soc.uoc.gr
+- family-names: Nagkoulis
+  given-names: Nikolaos
+  email: nikolaosn@civil.auth.gr
+  orcid: https://orcid.org/0000-0002-1900-2634
+- family-names: Mazaris
+  given-names: D. Antonios
+  email: amazaris@bio.auth.gr
+  orcid: https://orcid.org/0000-0002-4961-5490
+- family-names: Katsanevakis
+  given-names: Stelios
+  email: stelios@katsanevakis.com
+  orcid: https://orcid.org/0000-0002-5137-7540
+preferred-citation:
+  type: article
+  title: 'prior3D: An R package for three-dimensional conservation prioritization'
+  authors:
+  - family-names: Doxa
+    given-names: Aggeliki
+    email: aggeliki.doxa@uoc.gr
+    orcid: https://orcid.org/0000-0003-4279-1499
+  - family-names: Adam
+    given-names: Christos
+    email: econp266@econ.soc.uoc.gr
+  - family-names: Nagkoulis
+    given-names: Nikolaos
+    email: nikolaosn@civil.auth.gr
+    orcid: https://orcid.org/0000-0002-1900-2634
+  - family-names: Mazaris
+    given-names: D. Antonios
+    email: amazaris@bio.auth.gr
+    orcid: https://orcid.org/0000-0002-4961-5490
+  - family-names: Katsanevakis
+    given-names: Stelios
+    email: stelios@katsanevakis.com
+    orcid: https://orcid.org/0000-0002-5137-7540
+  journal: Ecological Modelling
+  year: '2024'
+  volume: '499'
+  doi: 10.1016/j.ecolmodel.2024.110919
+  start: '110919'
+repository: https://CRAN.R-project.org/package=prior3D
+repository-code: https://github.com/cadam00/prior3D
+url: https://cadam00.github.io/prior3D/
+contact:
+- family-names: Adam
+  given-names: Christos
+  email: econp266@econ.soc.uoc.gr
+references:
+- type: software
+  title: prioritizr
+  abstract: 'prioritizr: Systematic Conservation Prioritization in R'
+  notes: Imports
+  url: https://prioritizr.net
+  repository: https://CRAN.R-project.org/package=prioritizr
+  authors:
+  - family-names: Hanson
+    given-names: Jeffrey O
+    email: jeffrey.hanson@uqconnect.edu.au
+    orcid: https://orcid.org/0000-0002-4716-6134
+  - family-names: Schuster
+    given-names: Richard
+    email: richard.schuster@glel.carleton.ca
+    orcid: https://orcid.org/0000-0003-3191-7869
+  - family-names: Morrell
+    given-names: Nina
+    email: nina.morrell@ubc.ca
+  - family-names: Strimas-Mackey
+    given-names: Matthew
+    email: mstrimas@gmail.com
+    orcid: https://orcid.org/0000-0001-8929-7776
+  - family-names: Edwards
+    given-names: Brandon P M
+    email: brandonedwards3@cmail.carleton.ca
+    orcid: https://orcid.org/0000-0003-0865-3076
+  - family-names: Watts
+    given-names: Matthew E
+    email: m.watts@uq.edu.au
+  - family-names: Arcese
+    given-names: Peter
+    email: peter.arcese@ubc.ca
+    orcid: https://orcid.org/0000-0002-8097-482X
+  - family-names: Bennett
+    given-names: Joseph R
+    email: joseph.bennett@carleton.ca
+    orcid: https://orcid.org/0000-0002-3901-9513
+  - family-names: Possingham
+    given-names: Hugh P
+    email: hugh.possingham@tnc.org
+    orcid: https://orcid.org/0000-0001-7755-996X
+  year: '2024'
+  doi: 10.32614/CRAN.package.prioritizr
+  version: '>= 8.0.4'
+- type: software
+  title: terra
+  abstract: 'terra: Spatial Data Analysis'
+  notes: Imports
+  url: https://rspatial.org/
+  repository: https://CRAN.R-project.org/package=terra
+  authors:
+  - family-names: Hijmans
+    given-names: Robert J.
+    email: r.hijmans@gmail.com
+    orcid: https://orcid.org/0000-0001-5872-2872
+  year: '2024'
+  doi: 10.32614/CRAN.package.terra
+- type: software
+  title: maps
+  abstract: 'maps: Draw Geographical Maps'
+  notes: Imports
+  repository: https://CRAN.R-project.org/package=maps
+  authors:
+  - family-names: Becker
+    given-names: Original S code by Richard A.
+  - family-names: Minka
+    given-names: Allan R. Wilks. R version by Ray Brownrigg. Enhancements by Thomas
+      P
+  - family-names: Deckmyn.
+    given-names: Alex
+  year: '2024'
+  doi: 10.32614/CRAN.package.maps
+  version: '>= 3.4.2'
+- type: software
+  title: highs
+  abstract: 'highs: ''HiGHS'' Optimization Solver'
+  notes: Imports
+  url: https://gitlab.com/roigrp/solver/highs
+  repository: https://CRAN.R-project.org/package=highs
+  authors:
+  - family-names: Schwendinger
+    given-names: Florian
+    email: FlorianSchwendinger@gmx.at
+  - family-names: Schumacher
+    given-names: Dirk
+  year: '2024'
+  doi: 10.32614/CRAN.package.highs
+- type: software
+  title: viridis
+  abstract: 'viridis: Colorblind-Friendly Color Maps for R'
+  notes: Imports
+  url: https://sjmgarnier.github.io/viridis/
+  repository: https://CRAN.R-project.org/package=viridis
+  authors:
+  - family-names: Garnier
+    given-names: Simon
+    email: garnier@njit.edu
+  year: '2024'
+  doi: 10.32614/CRAN.package.viridis
+  version: '>= 0.6.5'
+- type: software
+  title: readxl
+  abstract: 'readxl: Read Excel Files'
+  notes: Imports
+  url: https://readxl.tidyverse.org
+  repository: https://CRAN.R-project.org/package=readxl
+  authors:
+  - family-names: Wickham
+    given-names: Hadley
+    email: hadley@posit.co
+    orcid: https://orcid.org/0000-0003-4757-117X
+  - family-names: Bryan
+    given-names: Jennifer
+    email: jenny@posit.co
+    orcid: https://orcid.org/0000-0002-6983-2759
+  year: '2024'
+  doi: 10.32614/CRAN.package.readxl
+  version: '>= 1.4.3'
+- type: software
+  title: rasterdiv
+  abstract: 'rasterdiv: Diversity Indices for Numerical Matrices'
+  notes: Imports
+  url: https://mattmar.github.io/rasterdiv/
+  repository: https://CRAN.R-project.org/package=rasterdiv
+  authors:
+  - family-names: Marcantonio
+    given-names: Matteo
+    email: marcantoniomatteo@gmail.com
+  - family-names: Iannacito
+    given-names: Martina
+    email: martina.iannacito@inria.fr
+  - family-names: Thouverai
+    given-names: Elisa
+    email: elisa.th95@gmail.com
+  - family-names: Torresani
+    given-names: Michele
+    email: michele.torresani@unibo.it
+  - family-names: Da Re
+    given-names: Daniele
+    email: daniele.dare@uclouvain.be
+  - family-names: Tattoni
+    given-names: Clara
+    email: clara.tattoni@gmail.com
+  - family-names: Bacaro
+    given-names: Giovanni
+    email: gbacaro@units.it
+  - family-names: Vicario
+    given-names: Saverio
+    email: saverio.vicario@cnr.it
+  - family-names: Ricotta
+    given-names: Carlo
+    email: carlo.ricotta@uniroma1.it
+  - family-names: Rocchini
+    given-names: Duccio
+    email: duccio.rocchini@unibo.it
+  year: '2024'
+  doi: 10.32614/CRAN.package.rasterdiv
+  version: '>= 0.3.4'
+- type: software
+  title: geodiv
+  abstract: 'geodiv: Methods for Calculating Gradient Surface Metrics'
+  notes: Imports
+  url: https://github.com/bioXgeo/geodiv
+  repository: https://CRAN.R-project.org/package=geodiv
+  authors:
+  - family-names: Smith
+    given-names: Annie C.
+  - family-names: Zarnetske
+    given-names: Phoebe
+  - family-names: Dahlin
+    given-names: Kyla
+  - family-names: Wilson
+    given-names: Adam
+  - family-names: Latimer
+    given-names: Andrew
+  year: '2024'
+  doi: 10.32614/CRAN.package.geodiv
+  version: '>= 1.1.0'
+- type: software
+  title: methods
+  abstract: 'R: A Language and Environment for Statistical Computing'
+  notes: Imports
+  authors:
+  - name: R Core Team
+  institution:
+    name: R Foundation for Statistical Computing
+    address: Vienna, Austria
+  year: '2024'
+- type: software
+  title: stats
+  abstract: 'R: A Language and Environment for Statistical Computing'
+  notes: Imports
+  authors:
+  - name: R Core Team
+  institution:
+    name: R Foundation for Statistical Computing
+    address: Vienna, Austria
+  year: '2024'
+- type: software
+  title: utils
+  abstract: 'R: A Language and Environment for Statistical Computing'
+  notes: Imports
+  authors:
+  - name: R Core Team
+  institution:
+    name: R Foundation for Statistical Computing
+    address: Vienna, Austria
+  year: '2024'
+- type: software
+  title: graphics
+  abstract: 'R: A Language and Environment for Statistical Computing'
+  notes: Imports
+  authors:
+  - name: R Core Team
+  institution:
+    name: R Foundation for Statistical Computing
+    address: Vienna, Austria
+  year: '2024'
+- type: software
+  title: grDevices
+  abstract: 'R: A Language and Environment for Statistical Computing'
+  notes: Imports
+  authors:
+  - name: R Core Team
+  institution:
+    name: R Foundation for Statistical Computing
+    address: Vienna, Austria
+  year: '2024'
+- type: software
+  title: knitr
+  abstract: 'knitr: A General-Purpose Package for Dynamic Report Generation in R'
+  notes: Suggests
+  url: https://yihui.org/knitr/
+  repository: https://CRAN.R-project.org/package=knitr
+  authors:
+  - family-names: Xie
+    given-names: Yihui
+    email: xie@yihui.name
+    orcid: https://orcid.org/0000-0003-0645-5666
+  year: '2024'
+  doi: 10.32614/CRAN.package.knitr
+- type: software
+  title: rmarkdown
+  abstract: 'rmarkdown: Dynamic Documents for R'
+  notes: Suggests
+  url: https://pkgs.rstudio.com/rmarkdown/
+  repository: https://CRAN.R-project.org/package=rmarkdown
+  authors:
+  - family-names: Allaire
+    given-names: JJ
+    email: jj@posit.co
+  - family-names: Xie
+    given-names: Yihui
+    email: xie@yihui.name
+    orcid: https://orcid.org/0000-0003-0645-5666
+  - family-names: Dervieux
+    given-names: Christophe
+    email: cderv@posit.co
+    orcid: https://orcid.org/0000-0003-4474-2498
+  - family-names: McPherson
+    given-names: Jonathan
+    email: jonathan@posit.co
+  - family-names: Luraschi
+    given-names: Javier
+  - family-names: Ushey
+    given-names: Kevin
+    email: kevin@posit.co
+  - family-names: Atkins
+    given-names: Aron
+    email: aron@posit.co
+  - family-names: Wickham
+    given-names: Hadley
+    email: hadley@posit.co
+  - family-names: Cheng
+    given-names: Joe
+    email: joe@posit.co
+  - family-names: Chang
+    given-names: Winston
+    email: winston@posit.co
+  - family-names: Iannone
+    given-names: Richard
+    email: rich@posit.co
+    orcid: https://orcid.org/0000-0003-3925-190X
+  year: '2024'
+  doi: 10.32614/CRAN.package.rmarkdown
+- type: software
+  title: testthat
+  abstract: 'testthat: Unit Testing for R'
+  notes: Suggests
+  url: https://testthat.r-lib.org
+  repository: https://CRAN.R-project.org/package=testthat
+  authors:
+  - family-names: Wickham
+    given-names: Hadley
+    email: hadley@posit.co
+  year: '2024'
+  doi: 10.32614/CRAN.package.testthat
+  version: '>= 3.0.0'
+- type: software
+  title: 'R: A Language and Environment for Statistical Computing'
+  notes: Depends
+  url: https://www.R-project.org/
+  authors:
+  - name: R Core Team
+  institution:
+    name: R Foundation for Statistical Computing
+    address: Vienna, Austria
+  year: '2024'
+  version: '>= 2.10'
+

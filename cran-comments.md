@@ -1,17 +1,8 @@
-# prior3D 0.1.2
+# prior3D 0.1.2-1
 
 ## Minor changes
 
-- Make internal code and outputs cleaner.
-
-- Add `overall_available` for 2D and 3D outputs from `Compare_2D_3D` and
-`prioritize_3D`.
-
-- Create CITATION file.
-
-- Update DESCRIPTION.
-
-- Update Introduction.Rmd and README text.
+- Update DESCRIPTION
 
 ## R CMD check results
 

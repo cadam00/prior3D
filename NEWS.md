@@ -2,7 +2,7 @@
 
 ## Minor changes
 
-- Update DESCRIPTION.
+- Update DESCRIPTION names.
 
 # prior3D 0.1.2
 

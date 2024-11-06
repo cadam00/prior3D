@@ -2,20 +2,29 @@ Package: prior3D
 Type: Package
 Title: 3D Prioritization Algorithm
 Version: 0.1.2
-Authors@R: c(person("Aggeliki", "Doxa", role = "aut", email = "aggeliki.doxa@uoc.gr"),
-             person("Christos", "Adam", role = c("aut", "cre"), email = "econp266@econ.soc.uoc.gr"),
-             person("Nikolaos", "Nagkoulis", role = "aut", email = "nikolaosn@civil.auth.gr"),
-             person("Antonios", "Mazaris", role = "aut", email = "amazaris@bio.auth.gr"),
-             person("Stelios", "Katsanevakis", role = "aut", email = "stelios@katsanevakis.com")
+Authors@R: c(person("Aggeliki", "Doxa", role = "aut",
+             email = "aggeliki.doxa@uoc.gr",
+             comment = c(ORCID = "0000-0003-4279-1499")),
+             person("Christos", "Adam", role = c("aut", "cre"),
+             email = "econp266@econ.soc.uoc.gr"),
+             person("Nikolaos", "Nagkoulis", role = "aut",
+             email = "nikolaosn@civil.auth.gr",
+             comment = c(ORCID = "0000-0002-1900-2634")),
+             person("D. Antonios", "Mazaris", role = "aut",
+             email = "amazaris@bio.auth.gr",
+             comment = c(ORCID = "0000-0002-4961-5490")),
+             person("Stelios", "Katsanevakis", role = "aut",
+             email = "stelios@katsanevakis.com",
+             comment = c(ORCID = "0000-0002-5137-7540"))
              )
 Maintainer: Christos Adam <econp266@econ.soc.uoc.gr>
 Description: Three-dimensional systematic conservation planning, conducting
              nested prioritization analyses across multiple depth levels and
-             ensuring efficient resource allocation throughout the water column
-             (Doxa et al. 2024 <doi:10.1111/gcb.16268>). It provides a
-             structured workflow designed to address biodiversity conservation
-             and management challenges in the 3 dimensions, while facilitating
-             users’ choices and parameterization. 
+             ensuring efficient resource allocation throughout the water column.
+             It provides a structured workflow designed to address biodiversity
+             conservation and management challenges in the 3 dimensions, while
+             facilitating users’ choices and parameterization (Doxa et al. 2024
+             <doi:10.1016/j.ecolmodel.2024.110919>).
 License: GPL-3
 Encoding: UTF-8
 URL: https://github.com/cadam00/prior3D, https://cadam00.github.io/prior3D/

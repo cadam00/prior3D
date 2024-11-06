@@ -160,6 +160,8 @@ A list containing the following objects (non-referenced are identical to the inp
 \item{solution3D}: list with 3D solution per budget percentage
 \item{absolute_held3D}: \code{absolute_held} for 3D solutions (see
 \code{\link[prior3D]{evaluate_3D}})
+\item{overall_available3D}: \code{overall_available} for 3D solutions (see
+\code{\link[prior3D]{evaluate_3D}})
 \item{overall_held3D}: \code{overall_held} for 3D solutions (see
 \code{\link[prior3D]{evaluate_3D}})
 \item{relative_helds3D}: \code{relative_held} for 3D solutions (see

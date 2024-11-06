@@ -4,10 +4,10 @@
   [![R-CMD-check](https://github.com/cadam00/prior3D/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/cadam00/prior3D/actions/workflows/R-CMD-check.yaml)
   <!-- badges: end -->
 
-**This work was conducted at the Department of Marine Sciences, University of
-the Aegean, Greece, supported by the European Union’s Horizon 2020 research and
-innovation programme HORIZON-CL6–2021-BIODIV-01–12 under grant agreement No
-101059407, “MarinePlan – Improved transdisciplinary science for effective
+**This research was conducted at the Department of Marine Sciences, University
+of the Aegean, Greece, supported by the European Union’s Horizon 2020 research
+and innovation programme HORIZON-CL6–2021-BIODIV-01–12, under grant agreement
+No 101059407, “MarinePlan – Improved transdisciplinary science for effective
 ecosystem-based maritime spatial planning and conservation in European Seas”.**
 
 ## 1 **Introduction to the prior3D Package (tutorial)**
@@ -98,7 +98,12 @@ if (!require(remotes)) install.packages("remotes")
 remotes::install_github("cadam00/prior3D")
 ```
 
-## 4 **Illustration example**
+## 4 **Citation**
+> Doxa A, Adam C, Nagkoulis N, Mazaris AD, Katsanevakis S, 2024. prior3D: An R
+package for three-dimensional conservation prioritization. Ecological Modelling
+<b>499</b>: 110919. https://doi.org/10.1016/j.ecolmodel.2024.110919
+
+## 5 **Illustration example**
 
 Let us consider the following dataset as an illustrative example. It
 represents a subset of the species analyzed in Doxa et al.
@@ -212,9 +217,9 @@ depth_raster
 ## max value   :     -6.60191
 ```
 
-## 5 **Step-by-Step 3D SCP analysis**
+## 6 **Step-by-Step 3D SCP analysis**
 
-### 5.1 **Step 1: Data Preparation**
+### 6.1 **Step 1: Data Preparation**
 
 **Transforming Biodiversity Distributions into Multilevel (3D) Data**
 
@@ -233,7 +238,7 @@ split_features <- split_rast(biodiv_raster,
 The output is a list containing species distributions for each
 bathymetric layer, necessary for the analysis next steps.
 
-### 5.2 **Step 2: 3D Prioritization Algorithm**
+### 6.2 **Step 2: 3D Prioritization Algorithm**
 
 The 3D prioritization algorithm is implemented using the
 `prioritize_3D()` function, the core function of the **prior3D**
@@ -253,7 +258,7 @@ single_3D <- prioritize_3D(split_features  = split_features,
 ```
 
 ``` r
-## [1] "Budget: 0.3"
+## Budget: 0.3
 ```
 
 <u>Notes:</u>
@@ -284,7 +289,7 @@ methods are available:
     depth levels with higher species diversity (number of species).
     (`budget_weights = "richness"`)
 
-### 5.3 **Step 3: Generating Outputs**
+### 6.3 **Step 3: Generating Outputs**
 
 **Prioritization Maps**
 
@@ -325,7 +330,7 @@ And for multiple budgets
 
 ``` r
 # Create plot of outputs for multiple budget percentages
-multuple_3D <- prioritize_3D(split_features  = split_features,
+multiple_3D <- prioritize_3D(split_features  = split_features,
                              depth_raster    = depth_raster,
                              breaks          = c(0, -40, -200, -2000, -Inf),
                              biodiv_df       = biodiv_df,
@@ -337,21 +342,21 @@ multuple_3D <- prioritize_3D(split_features  = split_features,
 ```
 
 ``` r
-## [1] "Budget: 0"
+## Budget: 0
 ## Warning: Portfolio could only find 1 out of 10 solutions.
 ## Warning: Portfolio could only find 1 out of 10 solutions.
 ## Warning: Portfolio could only find 1 out of 10 solutions.
 ## Warning: Portfolio could only find 1 out of 10 solutions.
-## [1] "Budget: 0.1"
-## [1] "Budget: 0.2"
-## [1] "Budget: 0.3"
-## [1] "Budget: 0.4"
-## [1] "Budget: 0.5"
-## [1] "Budget: 0.6"
-## [1] "Budget: 0.7"
-## [1] "Budget: 0.8"
-## [1] "Budget: 0.9"
-## [1] "Budget: 1"
+## Budget: 0.1
+## Budget: 0.2
+## Budget: 0.3
+## Budget: 0.4
+## Budget: 0.5
+## Budget: 0.6
+## Budget: 0.7
+## Budget: 0.8
+## Budget: 0.9
+## Budget: 1
 ## Warning: Problem failed presolve checks.
 ## 
 ## These checks indicate that solutions might not identify meaningful priority
@@ -364,7 +369,7 @@ multuple_3D <- prioritize_3D(split_features  = split_features,
 ```
 
 ``` r
-plot_3D(multuple_3D)
+plot_3D(multiple_3D)
 ```
 
 <p align="center">
@@ -377,7 +382,7 @@ plot_3D(multuple_3D)
 percentages
 </p>
 
-## 6 **Comparative Analysis of a 2D and a 3D SCP approach**
+## 7 **Comparative Analysis of a 2D and a 3D SCP approach**
 
 To facilitate comparisons between 3D and 2D approaches, the
 `compare_2D_3D()` function is provided in the package. This function
@@ -388,16 +393,55 @@ that facilitate comparisons. The function `plot_Compare_2D_3D()`
 generates corresponding maps and graphs for both approaches.
 
 ``` r
-out_2D_3D <- Compare_2D_3D(biodiv_raster = biodiv_raster,
-                           depth_raster = depth_raster,
-                           breaks = c(0, -40, -200, -2000, -Inf),
-                           biodiv_df = biodiv_df,
+out_2D_3D <- Compare_2D_3D(biodiv_raster   = biodiv_raster,
+                           depth_raster    = depth_raster,
+                           breaks          = c(0, -40, -200, -2000, -Inf),
+                           biodiv_df       = biodiv_df,
                            budget_percents = seq(0, 1, 0.1),
-                           budget_weights = "richness",
-                           threads = parallel::detectCores(),
-                           portfolio = "gap", #"shuffle"
-                           portfolio_opts = list(number_solutions = 10))
+                           budget_weights  = "richness",
+                           threads         = parallel::detectCores(),
+                           portfolio       = "gap", #"shuffle"
+                           portfolio_opts  = list(number_solutions = 10))
+```
 
+```r
+## Budget: 0
+## Warning: Portfolio could only find 1 out of 10 solutions.
+## Warning: Portfolio could only find 1 out of 10 solutions.
+## Warning: Portfolio could only find 1 out of 10 solutions.
+## Warning: Portfolio could only find 1 out of 10 solutions.
+## Warning: Portfolio could only find 1 out of 10 solutions.
+## Budget: 0.1
+## Budget: 0.2
+## Budget: 0.3
+## Budget: 0.4
+## Budget: 0.5
+## Budget: 0.6
+## Budget: 0.7
+## Budget: 0.8
+## Budget: 0.9
+## Budget: 1
+## Warning: Problem failed presolve checks.
+## 
+## These checks indicate that solutions might not identify meaningful priority
+## areas:
+## 
+## ✖ Budget is greater than the total cost of selecting all planning units.
+## → Maybe you made a mistake when setting the `budget` in the objective function?
+## 
+## ℹ For more information, see `presolve_check()`.
+## Warning: Problem failed presolve checks.
+## 
+## These checks indicate that solutions might not identify meaningful priority
+## areas:
+## 
+## ✖ Budget is greater than the total cost of selecting all planning units.
+## → Maybe you made a mistake when setting the `budget` in the objective function?
+## 
+## ℹ For more information, see `presolve_check()`.
+```
+
+```r
 plot_Compare_2D_3D(out_2D_3D, to_plot="all", add_lines=TRUE)
 ```
 
@@ -412,7 +456,7 @@ plot_Compare_2D_3D(out_2D_3D, to_plot="all", add_lines=TRUE)
 for multiple budget percentages
 </p>
 
-## 7 **Spatial Coherence Metrics**
+## 8 **Spatial Coherence Metrics**
 
 The spatial coherence of the prioritization output (optimization
 solution) maps is assessed using three metrics: average surface
@@ -475,7 +519,7 @@ coherence(out_2D_3D, w=3, metric="rao")
 ```
 
 ``` r
-## [1] "2D RAO"
+## 2D RAO
 ## 
 ## 
 ## Processing alpha: 1 Moving Window: 3
@@ -515,7 +559,7 @@ coherence(out_2D_3D, w=3, metric="rao")
 ## [===========================================>-]  99% in  0s
 ## [=============================================] 100% in  0s
 ## 
-## [1] "3D RAO"
+## 3D RAO
 ## 
 ## 
 ## Processing alpha: 1 Moving Window: 3
@@ -575,7 +619,7 @@ coherence(out_2D_3D, w=3, metric="rao")
 <span id="fig-Figure9"></span>Figure 9: RAO
 </p>
 
-## 8 **References**
+## 9 **References**
 
 Doxa, Aggeliki, Vasiliki Almpanidou, Stelios Katsanevakis, Ana M
 Queirós, Kristin Kaschner, Cristina Garilao, Kathleen Kesner-Reyes, and

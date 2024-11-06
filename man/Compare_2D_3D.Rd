@@ -180,6 +180,8 @@ A list containing the following objects (non-referenced are identical to the inp
 \item{solution3D}: list with 3D solution per budget percentage
 \item{absolute_held3D}: \code{absolute_held} for 3D solutions (see
 \code{\link[prior3D]{evaluate_3D}})
+\item{overall_available3D}: \code{overall_available} for 3D solutions (see
+\code{\link[prior3D]{evaluate_3D}})
 \item{overall_held3D}: \code{overall_held} for 3D solutions (see
 \code{\link[prior3D]{evaluate_3D}})
 \item{relative_helds3D}: \code{relative_held} for 3D solutions (see
@@ -188,10 +190,12 @@ A list containing the following objects (non-referenced are identical to the inp
 for 3D solution (see \code{\link[prior3D]{evaluate_3D}}) per budget
 \item{sd_overall_helds3D}: \code{stats::sd} of \code{overall_held}
 for 3D solution (see \code{\link[prior3D]{evaluate_3D}}) per budget
-\item{depth_overall_available3D}: \code{depth_overall_available} for 3D solutions (see
-\code{\link[prior3D]{evaluate_3D}})
+\item{depth_overall_available3D}: \code{depth_overall_available} for 3D
+solutions (see \code{\link[prior3D]{evaluate_3D}})
 \item{solution2D}: list with 2D solution per budget percentage
-\item{absolute_held2D}: \code{absolute_held} for 3D solutions (see
+\item{absolute_held2D}: \code{absolute_held} for 2D solutions (see
+\code{\link[prior3D]{evaluate_3D}})
+\item{overall_available2D}: \code{overall_available} for 2D solutions (see
 \code{\link[prior3D]{evaluate_3D}})
 \item{overall_held2D}: \code{overall_held} for 2D solutions (see
 \code{\link[prior3D]{evaluate_3D}})
@@ -201,15 +205,15 @@ for 3D solution (see \code{\link[prior3D]{evaluate_3D}}) per budget
 for 2D solution (see \code{\link[prior3D]{evaluate_3D}}) per budget
 \item{sd_overall_helds2D}: \code{stats::sd} of \code{overall_held}
 for 2D solution (see \code{\link[prior3D]{evaluate_3D}}) per budget
-\item{depth_overall_available2D}: \code{depth_overall_available} for 2D solutions (see
-\code{\link[prior3D]{evaluate_3D}})
+\item{depth_overall_available2D}: \code{depth_overall_available} for 2D
+solutions (see \code{\link[prior3D]{evaluate_3D}})
 \item{names_features}: names of features used
 \item{total_amount}: \code{total_amount} of features used
 (see \code{\link[prior3D]{evaluate_3D}})
-\item{overall_total_amount}: \code{overal_total_amount} of names of features used
-(see \code{\link[prior3D]{evaluate_3D}})
-\item{jaccard_coef}: \code{\link[prior3D]{terra_jaccard}} per pair of 2D and 3D solutions,
-given each budget
+\item{overall_total_amount}: \code{overal_total_amount} of names of features
+used (see \code{\link[prior3D]{evaluate_3D}})
+\item{jaccard_coef}: \code{\link[prior3D]{terra_jaccard}} per pair of 2D and 3D
+solutions, given each budget
 \item{depth_levels_names}: Depth levels names
 \item{biodiv_raster}: \code{biodiv_raster} used, after cleaning
 \item{biodiv_df}: \code{biodiv_df} used after cleaning

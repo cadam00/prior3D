@@ -25,10 +25,10 @@ vignette: >
 knitr::opts_chunk$set(echo = TRUE, eval=FALSE)
 ```
 
-**This work was conducted at the Department of Marine Sciences, University of
-the Aegean, Greece, supported by the European Union’s Horizon 2020 research and
-innovation programme HORIZON-CL6–2021-BIODIV-01–12 under grant agreement No
-101059407, “MarinePlan – Improved transdisciplinary science for effective
+**This research was conducted at the Department of Marine Sciences, University
+of the Aegean, Greece, supported by the European Union’s Horizon 2020 research
+and innovation programme HORIZON-CL6–2021-BIODIV-01–12, under grant agreement
+No 101059407, “MarinePlan – Improved transdisciplinary science for effective
 ecosystem-based maritime spatial planning and conservation in European Seas”.**
 
 ## 1 **Introduction to the prior3D Package (tutorial)**
@@ -262,7 +262,7 @@ single_3D <- prioritize_3D(split_features  = split_features,
 ```
 
 ``` r
-## [1] "Budget: 0.3"
+## Budget: 0.3
 ```
 
 <u>Notes:</u>
@@ -346,21 +346,21 @@ multuple_3D <- prioritize_3D(split_features  = split_features,
 ```
 
 ``` r
-## [1] "Budget: 0"
+## Budget: 0
 ## Warning: Portfolio could only find 1 out of 10 solutions.
 ## Warning: Portfolio could only find 1 out of 10 solutions.
 ## Warning: Portfolio could only find 1 out of 10 solutions.
 ## Warning: Portfolio could only find 1 out of 10 solutions.
-## [1] "Budget: 0.1"
-## [1] "Budget: 0.2"
-## [1] "Budget: 0.3"
-## [1] "Budget: 0.4"
-## [1] "Budget: 0.5"
-## [1] "Budget: 0.6"
-## [1] "Budget: 0.7"
-## [1] "Budget: 0.8"
-## [1] "Budget: 0.9"
-## [1] "Budget: 1"
+## Budget: 0.1
+## Budget: 0.2
+## Budget: 0.3
+## Budget: 0.4
+## Budget: 0.5
+## Budget: 0.6
+## Budget: 0.7
+## Budget: 0.8
+## Budget: 0.9
+## Budget: 1
 ## Warning: Problem failed presolve checks.
 ## 
 ## These checks indicate that solutions might not identify meaningful priority
@@ -397,16 +397,55 @@ that facilitate comparisons. The function `plot_Compare_2D_3D()`
 generates corresponding maps and graphs for both approaches.
 
 ``` r
-out_2D_3D <- Compare_2D_3D(biodiv_raster = biodiv_raster,
-                           depth_raster = depth_raster,
-                           breaks = c(0, -40, -200, -2000, -Inf),
-                           biodiv_df = biodiv_df,
+out_2D_3D <- Compare_2D_3D(biodiv_raster   = biodiv_raster,
+                           depth_raster    = depth_raster,
+                           breaks          = c(0, -40, -200, -2000, -Inf),
+                           biodiv_df       = biodiv_df,
                            budget_percents = seq(0, 1, 0.1),
-                           budget_weights = "richness",
-                           threads = parallel::detectCores(),
-                           portfolio = "gap", #"shuffle"
-                           portfolio_opts = list(number_solutions = 10))
+                           budget_weights  = "richness",
+                           threads         = parallel::detectCores(),
+                           portfolio       = "gap", #"shuffle"
+                           portfolio_opts  = list(number_solutions = 10))
+```
 
+```r
+## Budget: 0
+## Warning: Portfolio could only find 1 out of 10 solutions.
+## Warning: Portfolio could only find 1 out of 10 solutions.
+## Warning: Portfolio could only find 1 out of 10 solutions.
+## Warning: Portfolio could only find 1 out of 10 solutions.
+## Warning: Portfolio could only find 1 out of 10 solutions.
+## Budget: 0.1
+## Budget: 0.2
+## Budget: 0.3
+## Budget: 0.4
+## Budget: 0.5
+## Budget: 0.6
+## Budget: 0.7
+## Budget: 0.8
+## Budget: 0.9
+## Budget: 1
+## Warning: Problem failed presolve checks.
+## 
+## These checks indicate that solutions might not identify meaningful priority
+## areas:
+## 
+## ✖ Budget is greater than the total cost of selecting all planning units.
+## → Maybe you made a mistake when setting the `budget` in the objective function?
+## 
+## ℹ For more information, see `presolve_check()`.
+## Warning: Problem failed presolve checks.
+## 
+## These checks indicate that solutions might not identify meaningful priority
+## areas:
+## 
+## ✖ Budget is greater than the total cost of selecting all planning units.
+## → Maybe you made a mistake when setting the `budget` in the objective function?
+## 
+## ℹ For more information, see `presolve_check()`.
+```
+
+```r
 plot_Compare_2D_3D(out_2D_3D, to_plot="all", add_lines=TRUE)
 ```
 
@@ -484,7 +523,7 @@ coherence(out_2D_3D, w=3, metric="rao")
 ```
 
 ``` r
-## [1] "2D RAO"
+## 2D RAO
 ## 
 ## 
 ## Processing alpha: 1 Moving Window: 3
@@ -524,7 +563,7 @@ coherence(out_2D_3D, w=3, metric="rao")
 ## [===========================================>-]  99% in  0s
 ## [=============================================] 100% in  0s
 ## 
-## [1] "3D RAO"
+## 3D RAO
 ## 
 ## 
 ## Processing alpha: 1 Moving Window: 3

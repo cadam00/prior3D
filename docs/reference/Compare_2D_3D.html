@@ -193,6 +193,8 @@ computer, following the solver hierarchy of <span class="pkg">prioritizr</span>.
 <li><p>solution3D: list with 3D solution per budget percentage</p></li>
 <li><p>absolute_held3D: <code>absolute_held</code> for 3D solutions (see
 <code><a href="evaluate_3D.html">evaluate_3D</a></code>)</p></li>
+<li><p>overall_available3D: <code>overall_available</code> for 3D solutions (see
+<code><a href="evaluate_3D.html">evaluate_3D</a></code>)</p></li>
 <li><p>overall_held3D: <code>overall_held</code> for 3D solutions (see
 <code><a href="evaluate_3D.html">evaluate_3D</a></code>)</p></li>
 <li><p>relative_helds3D: <code>relative_held</code> for 3D solutions (see
@@ -201,10 +203,12 @@ computer, following the solver hierarchy of <span class="pkg">prioritizr</span>.
 for 3D solution (see <code><a href="evaluate_3D.html">evaluate_3D</a></code>) per budget</p></li>
 <li><p>sd_overall_helds3D: <code><a href="https://rdrr.io/r/stats/sd.html" class="external-link">stats::sd</a></code> of <code>overall_held</code>
 for 3D solution (see <code><a href="evaluate_3D.html">evaluate_3D</a></code>) per budget</p></li>
-<li><p>depth_overall_available3D: <code>depth_overall_available</code> for 3D solutions (see
-<code><a href="evaluate_3D.html">evaluate_3D</a></code>)</p></li>
+<li><p>depth_overall_available3D: <code>depth_overall_available</code> for 3D
+solutions (see <code><a href="evaluate_3D.html">evaluate_3D</a></code>)</p></li>
 <li><p>solution2D: list with 2D solution per budget percentage</p></li>
-<li><p>absolute_held2D: <code>absolute_held</code> for 3D solutions (see
+<li><p>absolute_held2D: <code>absolute_held</code> for 2D solutions (see
+<code><a href="evaluate_3D.html">evaluate_3D</a></code>)</p></li>
+<li><p>overall_available2D: <code>overall_available</code> for 2D solutions (see
 <code><a href="evaluate_3D.html">evaluate_3D</a></code>)</p></li>
 <li><p>overall_held2D: <code>overall_held</code> for 2D solutions (see
 <code><a href="evaluate_3D.html">evaluate_3D</a></code>)</p></li>
@@ -214,15 +218,15 @@ for 3D solution (see <code><a href="evaluate_3D.html">evaluate_3D</a></code>) pe
 for 2D solution (see <code><a href="evaluate_3D.html">evaluate_3D</a></code>) per budget</p></li>
 <li><p>sd_overall_helds2D: <code><a href="https://rdrr.io/r/stats/sd.html" class="external-link">stats::sd</a></code> of <code>overall_held</code>
 for 2D solution (see <code><a href="evaluate_3D.html">evaluate_3D</a></code>) per budget</p></li>
-<li><p>depth_overall_available2D: <code>depth_overall_available</code> for 2D solutions (see
-<code><a href="evaluate_3D.html">evaluate_3D</a></code>)</p></li>
+<li><p>depth_overall_available2D: <code>depth_overall_available</code> for 2D
+solutions (see <code><a href="evaluate_3D.html">evaluate_3D</a></code>)</p></li>
 <li><p>names_features: names of features used</p></li>
 <li><p>total_amount: <code>total_amount</code> of features used
 (see <code><a href="evaluate_3D.html">evaluate_3D</a></code>)</p></li>
-<li><p>overall_total_amount: <code>overal_total_amount</code> of names of features used
-(see <code><a href="evaluate_3D.html">evaluate_3D</a></code>)</p></li>
-<li><p>jaccard_coef: <code><a href="terra_jaccard.html">terra_jaccard</a></code> per pair of 2D and 3D solutions,
-given each budget</p></li>
+<li><p>overall_total_amount: <code>overal_total_amount</code> of names of features
+used (see <code><a href="evaluate_3D.html">evaluate_3D</a></code>)</p></li>
+<li><p>jaccard_coef: <code><a href="terra_jaccard.html">terra_jaccard</a></code> per pair of 2D and 3D
+solutions, given each budget</p></li>
 <li><p>depth_levels_names: Depth levels names</p></li>
 <li><p>biodiv_raster: <code>biodiv_raster</code> used, after cleaning</p></li>
 <li><p>biodiv_df: <code>biodiv_df</code> used after cleaning</p></li>
@@ -295,7 +299,7 @@ https://rpubs.com/jlehtoma/priocomp</a>
 
 
     <footer><div class="pkgdown-footer-left">
-  <p>Developed by Aggeliki Doxa, Christos Adam, Nikolaos Nagkoulis, Antonios Mazaris, Stelios Katsanevakis.</p>
+  <p>Developed by Aggeliki Doxa, Christos Adam, Nikolaos Nagkoulis, D. Antonios Mazaris, Stelios Katsanevakis.</p>
 </div>
 
 <div class="pkgdown-footer-right">

@@ -1,7 +1,7 @@
 bibentry(
   bibtype  = "Article",
   title    = "prior3D: An R package for three-dimensional conservation prioritization",
-  author   = "Aggeliki Doxa, Christos Adam, Nikolaos Nagkoulis, Antonios Mazaris D., Stelios Katsanevakis",
+  author   = "Aggeliki Doxa, Christos Adam, Nikolaos Nagkoulis, Antonios D. Mazaris, Stelios Katsanevakis",
   journal  = "Ecological Modelling",
   year     = "2024",
   volume   = "499",

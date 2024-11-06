@@ -53,8 +53,10 @@ preferred-citation:
     given-names: Nikolaos
     email: nikolaosn@civil.auth.gr
     orcid: https://orcid.org/0000-0002-1900-2634
-  - family-names: D.
-    given-names: Antonios Mazaris
+  - family-names: Mazaris
+    given-names: Antonios D.
+    email: amazaris@bio.auth.gr
+    orcid: https://orcid.org/0000-0002-4961-5490
   - family-names: Katsanevakis
     given-names: Stelios
     email: stelios@katsanevakis.com

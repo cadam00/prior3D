@@ -2,7 +2,7 @@
 
 ## Minor changes
 
-- Update DESCRIPTION names.
+- Update DESCRIPTION and CITATION names.
 
 ## R CMD check results
 

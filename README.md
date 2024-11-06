@@ -1,6 +1,6 @@
 <!-- badges: start -->
 [![CRAN status](https://www.r-pkg.org/badges/version/prior3D)](https://CRAN.R-project.org/package=prior3D)
-[![Developmental version](https://img.shields.io/badge/devel%20version-0.1.2-blue.svg)](https://github.com/cadam00/prior3D)
+[![Developmental version](https://img.shields.io/badge/devel%20version-0.1.3-blue.svg)](https://github.com/cadam00/prior3D)
   [![R-CMD-check](https://github.com/cadam00/prior3D/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/cadam00/prior3D/actions/workflows/R-CMD-check.yaml)
   <!-- badges: end -->
 

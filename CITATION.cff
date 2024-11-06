@@ -8,7 +8,7 @@ message: 'To cite package "prior3D" in publications use:'
 type: software
 license: GPL-3.0-only
 title: 'prior3D: 3D Prioritization Algorithm'
-version: 0.1.2
+version: 0.1.2-1
 doi: 10.1016/j.ecolmodel.2024.110919
 identifiers:
 - type: doi
@@ -31,7 +31,7 @@ authors:
   email: nikolaosn@civil.auth.gr
   orcid: https://orcid.org/0000-0002-1900-2634
 - family-names: Mazaris
-  given-names: D. Antonios
+  given-names: Antonios D.
   email: amazaris@bio.auth.gr
   orcid: https://orcid.org/0000-0002-4961-5490
 - family-names: Katsanevakis
@@ -55,8 +55,6 @@ preferred-citation:
     orcid: https://orcid.org/0000-0002-1900-2634
   - family-names: Mazaris
     given-names: D. Antonios
-    email: amazaris@bio.auth.gr
-    orcid: https://orcid.org/0000-0002-4961-5490
   - family-names: Katsanevakis
     given-names: Stelios
     email: stelios@katsanevakis.com

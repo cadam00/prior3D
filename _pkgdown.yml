@@ -1,7 +1,7 @@
 url: https://cadam00.github.io/prior3D/
 template:
   bootstrap: 5
-
+  math-rendering: mathjax
 navbar:
   left:
     - icon: fa-home

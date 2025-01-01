@@ -1,8 +1,8 @@
-# prior3D 0.1.3
+# prior3D 0.1.4
 
 ## Minor changes
 
-- Update DESCRIPTION and CITATION names.
+- Update CITATION.
 
 ## R CMD check results
 

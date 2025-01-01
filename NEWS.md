@@ -1,3 +1,9 @@
+# prior3D 0.1.4
+
+## Minor changes
+
+- Update CITATION.
+
 # prior3D 0.1.3
 
 ## Minor changes

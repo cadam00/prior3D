@@ -1,8 +1,8 @@
 <!-- badges: start -->
 [![CRAN status](https://www.r-pkg.org/badges/version/prior3D)](https://CRAN.R-project.org/package=prior3D)
-[![Developmental version](https://img.shields.io/badge/devel%20version-0.1.3-blue.svg)](https://github.com/cadam00/prior3D)
-  [![R-CMD-check](https://github.com/cadam00/prior3D/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/cadam00/prior3D/actions/workflows/R-CMD-check.yaml)
-  <!-- badges: end -->
+[![Developmental version](https://img.shields.io/badge/devel%20version-0.1.4-blue.svg)](https://github.com/cadam00/prior3D)
+[![R-CMD-check](https://github.com/cadam00/prior3D/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/cadam00/prior3D/actions/workflows/R-CMD-check.yaml)
+<!-- badges: end -->
 
 **This research was conducted at the Department of Marine Sciences, University
 of the Aegean, Greece, supported by the European Union’s Horizon 2020 research
@@ -99,7 +99,7 @@ remotes::install_github("cadam00/prior3D")
 ```
 
 ## 4 **Citation**
-> Doxa A, Adam C, Nagkoulis N, Mazaris AD, Katsanevakis S, 2024. prior3D: An R
+> Doxa A, Adam C, Nagkoulis N, Mazaris AD, Katsanevakis S, 2025. prior3D: An R
 package for three-dimensional conservation prioritization. Ecological Modelling
 <b>499</b>: 110919. https://doi.org/10.1016/j.ecolmodel.2024.110919
 

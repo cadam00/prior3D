@@ -1,12 +1,13 @@
 Package: prior3D
 Type: Package
 Title: 3D Prioritization Algorithm
-Version: 0.1.3
+Version: 0.1.4
 Authors@R: c(person("Aggeliki", "Doxa", role = "aut",
              email = "aggeliki.doxa@uoc.gr",
              comment = c(ORCID = "0000-0003-4279-1499")),
              person("Christos", "Adam", role = c("aut", "cre"),
-             email = "econp266@econ.soc.uoc.gr"),
+             email = "econp266@econ.soc.uoc.gr",
+             comment = c(ORCID = "0009-0003-3244-7034")),
              person("Nikolaos", "Nagkoulis", role = "aut",
              email = "nikolaosn@civil.auth.gr",
              comment = c(ORCID = "0000-0002-1900-2634")),
@@ -23,7 +24,7 @@ Description: Three-dimensional systematic conservation planning, conducting
              ensuring efficient resource allocation throughout the water column.
              It provides a structured workflow designed to address biodiversity
              conservation and management challenges in the 3 dimensions, while
-             facilitating users’ choices and parameterization (Doxa et al. 2024
+             facilitating users’ choices and parameterization (Doxa et al. 2025
              <doi:10.1016/j.ecolmodel.2024.110919>).
 License: GPL-3
 Encoding: UTF-8

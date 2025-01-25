@@ -1,6 +1,6 @@
 <!-- badges: start -->
 [![CRAN status](https://www.r-pkg.org/badges/version/prior3D)](https://CRAN.R-project.org/package=prior3D)
-[![Developmental version](https://img.shields.io/badge/devel%20version-0.1.4-blue.svg)](https://github.com/cadam00/prior3D)
+[![Developmental version](https://img.shields.io/badge/devel%20version-0.1.5-blue.svg)](https://github.com/cadam00/prior3D)
 [![R-CMD-check](https://github.com/cadam00/prior3D/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/cadam00/prior3D/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
@@ -626,27 +626,27 @@ Queirós, Kristin Kaschner, Cristina Garilao, Kathleen Kesner-Reyes, and
 Antonios D Mazaris. 2022. “<span class="nocase" id="ref-doxa20224d">4D marine
 conservation networks: Combining 3D prioritization of present and future
 biodiversity with climatic refugia</span>.
-” *Global Change Biology* 28 (15): 4577–88. https://doi.org/10.1111/gcb.16268.
+” *Global Change Biology* 28 (15): 4577–88. https://doi.org/10.1111/gcb.16268
 
 Hanson, Jeffrey O, Richard Schuster, Nina Morrell, Matthew
 Strimas-Mackey, Brandon P M Edwards, Matthew E Watts, Peter Arcese,
 Joseph Bennett, and Hugh P Possingham. 2024.
 *<span class="nocase" id="ref-prioritizr">prioritizr: Systematic Conservation
-Prioritization in R</span>*. https://prioritizr.net.
+Prioritization in R</span>*. https://prioritizr.net
 
 Rocchini, Duccio, Matteo Marcantonio, Daniele Da Re, Giovanni Bacaro,
 Enrico Feoli, Giles Foody, Reinhard Furrer, et al. 2021.
 “<span class="nocase" id = "ref-rasterdivpaper">From zero to infinity: Minimum 
 to maximum diversity of the planet by spatio-parametric Rao’s quadratic
 entropy</span>.” *Global Ecology and Biogeography* 30 (5): 2315.
-https://doi.org/10.1111/geb.13270.
+https://doi.org/10.1111/geb.13270
 
 Rocchini, Duccio, Elisa Thouverai, Matteo Marcantonio, Martina
 Iannacito, Daniele Da Re, Michele Torresani, Giovanni Bacaro, et al.
 2021. “<span class="nocase" id = "ref-rasterdiv">
 rasterdiv - An Information Theory tailored R package for measuring ecosystem
 heterogeneity from space: To the origin and back</span>.” *Methods in Ecology
-and Evolution* 12 (6): 2195. https://doi.org/10.1111/2041-210X.13583.
+and Evolution* 12 (6): 2195. https://doi.org/10.1111/2041-210X.13583
 
 Smith, Annie C., Phoebe Zarnetske, Kyla Dahlin, Adam Wilson, and Andrew
 Latimer. 2023. <span class="nocase" id = "ref-geodiv"></span>*Geodiv: Methods

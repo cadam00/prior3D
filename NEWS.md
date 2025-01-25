@@ -1,3 +1,13 @@
+# prior3D 0.1.5
+
+## Major changes
+
+- Package now depends on R (>= 4.1.0).
+
+## Minor changes
+
+- Update  documentation text.
+
 # prior3D 0.1.4
 
 ## Minor changes

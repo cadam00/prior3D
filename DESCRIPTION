@@ -1,7 +1,7 @@
 Package: prior3D
 Type: Package
 Title: 3D Prioritization Algorithm
-Version: 0.1.4
+Version: 0.1.5
 Authors@R: c(person("Aggeliki", "Doxa", role = "aut",
              email = "aggeliki.doxa@uoc.gr",
              comment = c(ORCID = "0000-0003-4279-1499")),
@@ -52,4 +52,4 @@ Suggests:
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
 VignetteBuilder: knitr, rmarkdown
-Depends: R (>= 2.10)
+Depends: R (>= 4.1.0)

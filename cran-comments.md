@@ -3,8 +3,8 @@ Dear CRAN volunteers,
 Thank you for reviewing this submission. It contains an update to the prior3D R
 package. Specifically, the update contains assorted minor improvements, bug
 fixes, and updates to the package documentation. It also addresses the NOTEs
-currently produced during CRAN package checks related to missing documentation
-links.
+currently produced during CRAN package checks related to dependence of
+R >= 4.1.0.
 
 Best,
 

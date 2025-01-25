@@ -14,9 +14,9 @@ Christos Adam
 
 * checking DESCRIPTION meta-information ... NOTE
   Missing dependency on R >= 4.1.0 because package code uses the pipe
-  |> or function shorthand \\(...) syntax added in R 4.1.0.
+  |> or function shorthand \(...) syntax added in R 4.1.0.
   File(s) using such syntax:
-    'functions_connect.R'
+    ‘rfunctions.R’
 
 **Added the following field in the DESCRIPTION:**
 

@@ -6,7 +6,7 @@
 
 ## Minor changes
 
-- Update  documentation text.
+- Update documentation text.
 
 # prior3D 0.1.4
 

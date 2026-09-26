@@ -26,7 +26,8 @@ conducting a step-by-step prioritization analysis at each depth Figure
 a cost layer for the layer above. This approach gives priority to areas chosen
 in deeper waters when selecting areas at the subsequent upper level, thus
 creating a cascading prioritization structure. The **prior3D** package is built
-upon the **prioritizr** package ([Hanson et al. 2024](#ref-prioritizr)), using
+upon the **prioritizr** package ([Hanson et al., 2026](#ref-prioritizr);
+[2025](#ref-hanson2025)), using
 commercial and open-source exact algorithm solvers that ensure optimal solutions
 to prioritization problems.
 
@@ -466,7 +467,7 @@ used for comparison among solution 2D and 3D solutions.
 High SA values signify that there is a high spatial heterogeneity,
 indicating lower spatial coherence. High SKU indicate high spatial
 coherence. Both SA and SKU are calculated using R package **geodiv**
-([Smith et al. 2023](#ref-geodiv)), applying `geodiv::focal_metrics`
+([Smith et al. 2026](#ref-geodiv)), applying `geodiv::focal_metrics`
 functions “sa” and “sku” to optimization solution rasters.
 
 High RAO values suggest increased spatial heterogeneity, thus low
@@ -630,9 +631,15 @@ biodiversity with climatic refugia</span>.
 
 Hanson, Jeffrey O, Richard Schuster, Nina Morrell, Matthew
 Strimas-Mackey, Brandon P M Edwards, Matthew E Watts, Peter Arcese,
-Joseph Bennett, and Hugh P Possingham. 2024.
+Joseph Bennett, and Hugh P Possingham. 2026.
 *<span class="nocase" id="ref-prioritizr">prioritizr: Systematic Conservation
 Prioritization in R</span>*. https://prioritizr.net
+
+<span class="nocase" id="ref-hanson2025"></span>
+Hanson JO, Schuster R, Strimas‐Mackey M, Morrell N, Edwards BPM, Arcese P,
+Bennett JR, and Possingham HP. 2025. Systematic conservation prioritization with
+the prioritizr R package. *Conservation Biology*, 39: e14376.
+https://doi.org/10.1111/cobi.14376
 
 Rocchini, Duccio, Matteo Marcantonio, Daniele Da Re, Giovanni Bacaro,
 Enrico Feoli, Giles Foody, Reinhard Furrer, et al. 2021.
@@ -649,6 +656,6 @@ heterogeneity from space: To the origin and back</span>.” *Methods in Ecology
 and Evolution* 12 (6): 2195. https://doi.org/10.1111/2041-210X.13583
 
 Smith, Annie C., Phoebe Zarnetske, Kyla Dahlin, Adam Wilson, and Andrew
-Latimer. 2023. <span class="nocase" id = "ref-geodiv"></span>*Geodiv: Methods
+Latimer. 2026. <span class="nocase" id = "ref-geodiv"></span>*Geodiv: Methods
 for Calculating Gradient Surface Metrics*.
 https://doi.org/10.32614/CRAN.package.geodiv

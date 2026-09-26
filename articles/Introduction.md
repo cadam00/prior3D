@@ -25,9 +25,10 @@ considered as a cost layer for the layer above. This approach gives
 priority to areas chosen in deeper waters when selecting areas at the
 subsequent upper level, thus creating a cascading prioritization
 structure. The **prior3D** package is built upon the **prioritizr**
-package ([Hanson et al. 2024](#ref-prioritizr)), using commercial and
-open-source exact algorithm solvers that ensure optimal solutions to
-prioritization problems.
+package ([Hanson et al., 2026](#ref-prioritizr);
+[2025](#ref-hanson2025)), using commercial and open-source exact
+algorithm solvers that ensure optimal solutions to prioritization
+problems.
 
 ![Figure 1: Flow chart of the 3D prioritization analysis for the four
 depth zones considered in the @doxa20224d analysis](fig1.jpg)
@@ -447,7 +448,7 @@ used for comparison among solution 2D and 3D solutions.
 High SA values signify that there is a high spatial heterogeneity,
 indicating lower spatial coherence. High SKU indicate high spatial
 coherence. Both SA and SKU are calculated using R package **geodiv**
-([Smith et al. 2023](#ref-geodiv)), applying
+([Smith et al. 2026](#ref-geodiv)), applying
 [`geodiv::focal_metrics`](https://rdrr.io/pkg/geodiv/man/focal_metrics.html)
 functions “sa” and “sku” to optimization solution rasters.
 
@@ -614,6 +615,11 @@ Strimas-Mackey, Brandon P M Edwards, Matthew E Watts, Peter Arcese,
 Joseph Bennett, and Hugh P Possingham. 2024. *prioritizr: Systematic
 Conservation Prioritization in R*. <https://prioritizr.net>
 
+Hanson JO, Schuster R, Strimas‐Mackey M, Morrell N, Edwards BPM, Arcese
+P, Bennett JR, and Possingham HP. 2025. Systematic conservation
+prioritization with the prioritizr R package. *Conservation Biology*,
+39: e14376. <https://doi.org/10.1111/cobi.14376>
+
 Rocchini, Duccio, Matteo Marcantonio, Daniele Da Re, Giovanni Bacaro,
 Enrico Feoli, Giles Foody, Reinhard Furrer, et al. 2021. “From zero to
 infinity: Minimum to maximum diversity of the planet by
@@ -628,5 +634,5 @@ measuring ecosystem heterogeneity from space: To the origin and back.”
 <https://doi.org/10.1111/2041-210X.13583>
 
 Smith, Annie C., Phoebe Zarnetske, Kyla Dahlin, Adam Wilson, and Andrew
-Latimer. 2023. *Geodiv: Methods for Calculating Gradient Surface
+Latimer. 2026. *Geodiv: Methods for Calculating Gradient Surface
 Metrics*. <https://doi.org/10.32614/CRAN.package.geodiv>

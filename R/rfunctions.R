@@ -234,7 +234,7 @@ split_rast <- function(biodiv_raster,
     init_problem <- init_problem |> add_boundary_penalties(penalty,edge_factor)
   }
 
-  init_problem <- init_problem |> add_max_utility_objective(budget)
+  init_problem <- init_problem |> add_max_wtd_sum_objective(budget)
 
   if ( !is.null(weight_data) ){
     init_problem <- init_problem |> add_feature_weights(weight_data)

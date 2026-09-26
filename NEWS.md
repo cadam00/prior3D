@@ -1,3 +1,10 @@
+# prior3D 0.1.6
+
+## Minor changes
+
+- Updated `add_max_utility_objective` to `add_max_wtd_sum_objective`, following
+`prioritizr` version 9.0.1.
+
 # prior3D 0.1.5
 
 ## Major changes

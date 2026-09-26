@@ -1,27 +1,9 @@
-Dear CRAN volunteers,
+# prior3D 0.1.6
 
-Thank you for reviewing this submission. It contains an update to the prior3D R
-package. Specifically, the update contains assorted minor improvements, bug
-fixes, and updates to the package documentation. It also addresses the NOTEs
-currently produced during CRAN package checks related to dependence of
-R >= 4.1.0.
+## Minor changes
 
-Best,
-
-Christos Adam
-
-## CRAN check notes
-
-* checking DESCRIPTION meta-information ... NOTE
-  Missing dependency on R >= 4.1.0 because package code uses the pipe
-  |> or function shorthand \(...) syntax added in R 4.1.0.
-  File(s) using such syntax:
-    ‘rfunctions.R’
-
-**Added the following field in the DESCRIPTION:**
-
-Depends:
-    R (>= 4.1.0)
+- Updated `add_max_utility_objective` to `add_max_wtd_sum_objective`, following
+`prioritizr` version 9.0.1.
 
 ## R CMD check results
 

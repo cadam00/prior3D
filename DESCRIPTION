@@ -1,7 +1,7 @@
 Package: prior3D
 Type: Package
 Title: 3D Prioritization Algorithm
-Version: 0.1.5
+Version: 0.1.6
 Authors@R: c(person("Aggeliki", "Doxa", role = "aut",
              email = "aggeliki.doxa@uoc.gr",
              comment = c(ORCID = "0000-0003-4279-1499")),
@@ -32,7 +32,7 @@ URL: https://github.com/cadam00/prior3D, https://cadam00.github.io/prior3D/
 BugReports: https://github.com/cadam00/prior3D/issues
 LazyData: true
 Imports: 
-    prioritizr (>= 8.0.4),
+    prioritizr (>= 9.0.1),
     terra,
     maps (>= 3.4.2),
     highs,

@@ -6,11 +6,17 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>Introduction to prior3D • prior3D</title>
-<script src="../deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link href="../deps/bootstrap-5.3.1/bootstrap.min.css" rel="stylesheet">
-<script src="../deps/bootstrap-5.3.1/bootstrap.bundle.min.js"></script><link href="../deps/font-awesome-6.5.2/css/all.min.css" rel="stylesheet">
+<!-- mathjax math --><script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI=" crossorigin="anonymous"></script><script>
+  window.MathJax = {
+    chtml: {
+      fontURL: "https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/output/chtml/fonts/woff-v2"
+    }
+  };
+</script><script src="../deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="../deps/bootstrap-5.3.8/bootstrap.min.css" rel="stylesheet">
+<script src="../deps/bootstrap-5.3.8/bootstrap.bundle.min.js"></script><link href="../deps/font-awesome-6.5.2/css/all.min.css" rel="stylesheet">
 <link href="../deps/font-awesome-6.5.2/css/v4-shims.min.css" rel="stylesheet">
-<script src="../deps/headroom-0.11.0/headroom.min.js"></script><script src="../deps/headroom-0.11.0/jQuery.headroom.min.js"></script><script src="../deps/bootstrap-toc-1.0.1/bootstrap-toc.min.js"></script><script src="../deps/clipboard.js-2.0.11/clipboard.min.js"></script><script src="../deps/search-1.0.0/autocomplete.jquery.min.js"></script><script src="../deps/search-1.0.0/fuse.min.js"></script><script src="../deps/search-1.0.0/mark.min.js"></script><script src="../deps/MathJax-3.2.2/tex-chtml.min.js"></script><!-- pkgdown --><script src="../pkgdown.js"></script><meta property="og:title" content="Introduction to prior3D">
+<script src="../deps/headroom-0.11.0/headroom.min.js"></script><script src="../deps/headroom-0.11.0/jQuery.headroom.min.js"></script><script src="../deps/bootstrap-toc-1.0.1/bootstrap-toc.min.js"></script><script src="../deps/clipboard.js-2.0.11/clipboard.min.js"></script><script src="../deps/search-1.0.0/autocomplete.jquery.min.js"></script><script src="../deps/search-1.0.0/fuse.min.js"></script><script src="../deps/search-1.0.0/mark.min.js"></script><!-- pkgdown --><script src="../pkgdown.js"></script><meta property="og:title" content="Introduction to prior3D">
 </head>
 <body>
     <a href="#main" class="visually-hidden-focusable">Skip to contents</a>
@@ -20,7 +26,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">prior3D</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.1.5</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.1.7</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,9 +55,10 @@
   <main id="main" class="col-md-9"><div class="page-header">
 
       <h1>Introduction to prior3D</h1>
-                        <h4 data-toc-skip class="author">Aggeliki Doxa,
-Christos Adam, Nikolaos Nagkoulis, Antonios Mazaris, Stelios
-Katsanevakis</h4>
+                        <h4 data-toc-skip class="author"></h4>
+<p>Aggeliki
+Doxa, Christos Adam, Nikolaos Nagkoulis, Antonios Mazaris, Stelios
+Katsanevakis</p>
             
       
       <small class="dont-index">Source: <a href="https://github.com/cadam00/prior3D/blob/HEAD/vignettes/Introduction.Rmd" class="external-link"><code>vignettes/Introduction.Rmd</code></a></small>
@@ -86,8 +93,9 @@ priority to areas chosen in deeper waters when selecting areas at the
 subsequent upper level, thus creating a cascading prioritization
 structure. The <strong>prior3D</strong> package is built upon the
 <strong>prioritizr</strong> package (<a href="#ref-prioritizr">Hanson et
-al. 2024</a>), using commercial and open-source exact algorithm solvers
-that ensure optimal solutions to prioritization problems.</p>
+al., 2026</a>; <a href="#ref-hanson2025">2025</a>), using commercial and
+open-source exact algorithm solvers that ensure optimal solutions to
+prioritization problems.</p>
 <p align="center">
 <img src="fig1.jpg" alt="Figure 1: Flow chart of the 3D prioritization analysis for the four depth
   zones considered in the @doxa20224d analysis" width="100%"></p>
@@ -451,7 +459,7 @@ used for comparison among solution 2D and 3D solutions.</p>
 <p>High SA values signify that there is a high spatial heterogeneity,
 indicating lower spatial coherence. High SKU indicate high spatial
 coherence. Both SA and SKU are calculated using R package
-<strong>geodiv</strong> (<a href="#ref-geodiv">Smith et al. 2023</a>),
+<strong>geodiv</strong> (<a href="#ref-geodiv">Smith et al. 2026</a>),
 applying <code><a href="https://rdrr.io/pkg/geodiv/man/focal_metrics.html" class="external-link">geodiv::focal_metrics</a></code> functions “sa” and “sku” to
 optimization solution rasters.</p>
 <p>High RAO values suggest increased spatial heterogeneity, thus low
@@ -600,6 +608,10 @@ Biology</em> 28 (15): 4577–88. <a href="https://doi.org/10.1111/gcb.16268" cla
 Strimas-Mackey, Brandon P M Edwards, Matthew E Watts, Peter Arcese,
 Joseph Bennett, and Hugh P Possingham. 2024. <em><span id="ref-prioritizr" class="nocase">prioritizr: Systematic Conservation
 Prioritization in R</span></em>. <a href="https://prioritizr.net" class="external-link uri">https://prioritizr.net</a></p>
+<p><span id="ref-hanson2025" class="nocase"></span> Hanson JO, Schuster
+R, Strimas‐Mackey M, Morrell N, Edwards BPM, Arcese P, Bennett JR, and
+Possingham HP. 2025. Systematic conservation prioritization with the
+prioritizr R package. <em>Conservation Biology</em>, 39: e14376. <a href="https://doi.org/10.1111/cobi.14376" class="external-link uri">https://doi.org/10.1111/cobi.14376</a></p>
 <p>Rocchini, Duccio, Matteo Marcantonio, Daniele Da Re, Giovanni Bacaro,
 Enrico Feoli, Giles Foody, Reinhard Furrer, et al. 2021. “<span id="ref-rasterdivpaper" class="nocase">From zero to infinity: Minimum to
 maximum diversity of the planet by spatio-parametric Rao’s quadratic
@@ -611,7 +623,7 @@ Information Theory tailored R package for measuring ecosystem
 heterogeneity from space: To the origin and back</span>.” <em>Methods in
 Ecology and Evolution</em> 12 (6): 2195. <a href="https://doi.org/10.1111/2041-210X.13583" class="external-link uri">https://doi.org/10.1111/2041-210X.13583</a></p>
 <p>Smith, Annie C., Phoebe Zarnetske, Kyla Dahlin, Adam Wilson, and
-Andrew Latimer. 2023. <span id="ref-geodiv" class="nocase"></span><em>Geodiv: Methods for Calculating Gradient
+Andrew Latimer. 2026. <span id="ref-geodiv" class="nocase"></span><em>Geodiv: Methods for Calculating Gradient
 Surface Metrics</em>. <a href="https://doi.org/10.32614/CRAN.package.geodiv" class="external-link uri">https://doi.org/10.32614/CRAN.package.geodiv</a></p>
 </div>
   </main><aside class="col-md-3"><nav id="toc" aria-label="Table of contents"><h2>On this page</h2>
@@ -625,7 +637,7 @@ Surface Metrics</em>. <a href="https://doi.org/10.32614/CRAN.package.geodiv" cla
 </div>
 
 <div class="pkgdown-footer-right">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.1.1.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.2.1.</p>
 </div>
 
     </footer>

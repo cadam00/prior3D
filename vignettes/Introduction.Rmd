@@ -1,7 +1,8 @@
 ---
 title: "Introduction to prior3D"
-author: "Aggeliki Doxa, Christos Adam, Nikolaos Nagkoulis, Antonios Mazaris,
-Stelios Katsanevakis"
+author: >
+  Aggeliki Doxa, Christos Adam, Nikolaos Nagkoulis, Antonios Mazaris,
+  Stelios Katsanevakis
 output:
   html_document:
     df_print: paged

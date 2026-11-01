@@ -1,3 +1,10 @@
+# prior3D 0.1.7
+
+## Minor changes
+
+- Updated Introduction.Rmd to fix the invalid indentation of a line in a
+double-quoted scalar.
+
 # prior3D 0.1.6
 
 ## Minor changes

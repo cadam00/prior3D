@@ -1,9 +1,9 @@
-# prior3D 0.1.6
+# prior3D 0.1.7
 
 ## Minor changes
 
-- Updated `add_max_utility_objective` to `add_max_wtd_sum_objective`, following
-`prioritizr` version 9.0.1.
+- Updated Introduction.Rmd to fix the invalid indentation of a line in a
+double-quoted scalar.
 
 ## R CMD check results
 

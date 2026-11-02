@@ -1,4 +1,4 @@
-# prior3D 0.1.7
+# prior3D 0.1.8
 
 - Fixed invalid url (https://www.aquamaps.org) used in Reference section of function `get_biodiv_raster` by writing it as plain text instead of link.
 

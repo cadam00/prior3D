@@ -20,7 +20,7 @@ SpatRaster object with distribution of features.
 
 Kaschner, K., Kesner-Reyes, K., Garilao, C., Segschneider, J.,
 Rius-Barile, J., Rees, T., & Froese, R. (2019). AquaMaps: Predicted
-range maps for aquatic species. <https://www.aquamaps.org>
+range maps for aquatic species. https://www.aquamaps.org
 
 ## Examples
 

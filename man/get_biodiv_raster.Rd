@@ -23,7 +23,7 @@ SpatRaster object with distribution of features.
 \references{
 Kaschner, K., Kesner-Reyes, K., Garilao, C., Segschneider, J., Rius-Barile,
 J., Rees, T., & Froese, R. (2019). AquaMaps: Predicted range maps
-for aquatic species. \href{https://www.aquamaps.org}{https://www.aquamaps.org}
+for aquatic species. https://www.aquamaps.org
 }
 
 \examples{

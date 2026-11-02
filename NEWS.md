@@ -1,3 +1,9 @@
+# prior3D 0.1.8
+
+## Minor changes
+
+- Fixed invalid link of reference in `get_biodiv_raster`
+
 # prior3D 0.1.7
 
 ## Minor changes
